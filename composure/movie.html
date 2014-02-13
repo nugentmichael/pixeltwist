@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Composure - Official Movie</title>
+   		<meta name="handheldfriendly" content="true">
+		<meta name="mobileoptimized" content="240">
+		<meta name="viewport" content="width=device-width,initial-scale=1" >
+        <link href="css/reset.css" rel="stylesheet">
+		<link href="css/movie.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/modal.css">
+        <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js" type="text/javascript"></script>
+        <script src="http://code.jquery.com/jquery-1.8.3.js" type="text/javascript"></script>
+
+      <script type="text/javascript">
+        $(document).ready(function(){
+          $('.clientsOpen').click(function () {
+            $('#clientsDropDown #clientsDashboard').slideToggle({
+              direction: "up"
+            }, 200);
+            $(this).toggleClass('clientsClose');
+          }); // end click
+        });
+      </script>
+        <!--[if !IE 7]>
+            <style type="text/css">
+                #wrapper {display:table;height:100%}
+            </style>
+        <![endif]-->
+    
+    </head>
+    
+
+	<body>
+        <div id="wrapper">
+            <div id="josh"><img src="images/josh.png" alt="movie character"></div>
+                <div id="title"> 
+                    <img src="images/title.png" alt="Composure title">
+                    <p style="text-align:center; font-size:2rem; font-family: 'bignoodletitlingregular', Helvetica;">In Theaters March 2014!</p>
+                    <video controls autoplay>
+                        <source src="videos/90Seconds.mp4">
+<!--                         <source src="videos/dreadnaught.ogv">
+ -->                    </video>
+                    <div id="synopsis"><a href="#modal-text" class="blue button" data-effect="mfp-zoom-in">Read Synopsis</a></div>
+
+    <!--video can have width and height though be careful not to stretch or squish your work-->
+                    <section class="semantic-content" id="modal-text" tabindex="-1"
+                role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+            <!--the pop up -->
+            <div class="modal-inner">
+                <header id="modal-label">Synopsis</header>
+                <div class="modal-content"><p>Harry is a young composer who loves to read, write and play all kinds of music. Lately he has been feeling pretty down and unmotivated to write. One day Harry offers to help his father clean out the very cluttered attic of their suburban town-home. To Harry's surprise, he finds this tattered, dusty box underneath a pile of boxes. After struggling to get it open the box reveals a microphone.</p>
+                <p>It takes no time for Harry to figure out the microphone's true power of making any recorded sample sound with the perfect tone. Harry takes his discovery and shares his findings with some of his friends from school.
+                One afternoon Harry left the microphone unattended and his brother Peanut decided to play with it. Peanut drops the microphone and it breaks. Harry's dad realizes Harry has found the microphone and warns him of consequences that could arise from having the object.</p>
+                <p>To get the microphone fixed, Harry takes it to a nearby shop owned by an creepy old man named Jack. Jack helps Harry but also heeds warning that someone will come for the microphone and that they would stop at nothing to get it back.</p>
+                <p>Harry keeps this information in mind until one day a group of men start to ask questions of everyone in Harry's social circle. His parents and even Harry himself are interrogated with their hoped result of finding the microphone. Harry's friend Kevin cracks under pressure and reveals to the interrogators that Harry has the magical microphone they are seeking.</p>
+                <p>A chase scene ensues as the Big Three tries to recover the microphone. Harry is put into a situational corner and has to decided to either destroy the microphone for good or hand it over the the unknown assailants.
+                Harry returns to old man's shop a few months later and learns from Jack that there is indeed another microphone with mystical powers.</p>
+                </div>
+                <footer><!-- Footer --></footer>
+            </div>
+
+            <a href="#!" class="modal-close" title="Close this modal" data-close="Close"
+                data-dismiss="modal">×</a>
+                </section>
+            </div>
+            <div class="socialMedia"><span class="follow">FOLLOW ON </span><a href="#" class="social facebook hide-text">Facebook</a><a href="#" class="social twitter hide-text">Twitter</a></div>
+
+        </div>
+<div id="clientsDropDown">
+    <p class="clientsOpen hide-text">clients</p>
+
+  <div id="clientsDashboard">
+    <p id="clientsCTA">
+            <p class="about"><img src="images/credits.png">
+            <p class="copyright">&copy; 2013 <a href="http://pixeltwist.ca">Pixeltwist Studio</a>. All rights reserved.</p>    
+    </p>
+  </div>
+  <!-- /clientsDashboard -->
+</div>
+<!-- //clientsDropDown -->
+
+        <script src="scripts/page.js"></script>  
+        <script src="scripts/modal.js"></script>
+	</body>
+</html>

@@ -1,0 +1,341 @@
+@charset "UTF-8";
+/* CSS Document */
+body{
+	background-color:rgb(23,74,89);
+	font-size:100%;
+	width:100%;
+	height:100%;
+}
+#wrapper{
+	width:100%;
+	height:100%;
+}
+
+@font-face {
+  font-family:Archive;
+  src: url("../fonts/Archive.otf");
+}
+
+@font-face {
+  font-family: Dense-Regular;
+  src: url("../fonts/Dense-Regular.otf");
+}
+
+@font-face {
+  font-family: SciFly-Sans;
+  src: url("../fonts/SciFly-Sans.ttf");
+}
+
+/*----- Custom Typefaces -----*/
+@font-face {
+  font-family: Archive;
+  src: url("../fonts/Archive.otf");
+}
+
+@font-face {
+  font-family: Dense-Regular;
+  src: url("../fonts/Dense-Regular.otf");
+}
+
+@font-face {
+  font-family: SciFly-Sans;
+  src: url("../fonts/SciFly-Sans.ttf");
+}
+
+
+* {
+  -webkit-font-smoothing: antialised;
+}
+
+p{
+	font-family: "Dense-Regular", sans-serif;
+	display:block;
+	letter-spacing:1px;
+	font-size:3em;
+	color:rgb(23,74,89);
+}
+
+#navigation {
+  height: 75px;
+  width: 100%;
+  padding: 10px;
+  background: #FFF;
+  position: fixed;
+  z-index:1000;
+  top: 0;
+  left: 0;
+  box-shadow: 0px 3px 5px #323232;
+  -webkit-box-shadow: 0px 3px 5px #323232;
+  -moz-box-shadow: 0px 3px 5px #323232;
+}
+
+#navigation img {
+  margin-right: 50px;
+  width: 200px;
+  height: 66px;
+}
+
+#navigation a:link {
+  font-family: "Archive", sans-serif;
+  font-size: 1.4em;
+  color: #174A59;
+  padding-right: 35px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#navigation a:visited {
+  color: #174A59;
+  border:none;
+}
+
+#navigation a:hover {
+  color: teal;
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+}
+
+#navigation a:active {
+  text-decoration: none;
+}
+
+#navigation a[id="work"] {
+  visibility: hidden;
+}
+
+
+a[id="hero"], a[id="about"], a[id="work"], a[id="team"], a[id="blog"], a[id="contact"] {
+  visibility: hidden;
+  padding: 0 !important;
+}
+
+#content{
+	width:90%;
+	height:100%;
+	margin:150px auto;
+	overflow:hidden;
+}
+
+.four{
+	height:500px;
+	width:270px;
+	background-image:url(../images/four.png);
+	background-repeat:no-repeat;
+	background-size:contain;
+	float:left;
+}
+
+#logo{
+	width:500px;
+	height:500px;
+	border-radius:500px;
+	background-color:white;
+	background-image:url(../images/pixel-logo.png);
+	-webkit-transform:rotate(-35deg);
+    -moz-transform:rotate(-35deg);
+	-ms-transform:rotate(-35deg);
+	-o-transform:rotate(-35deg);
+	transform:rotate(-35deg);
+	background-repeat:no-repeat;
+	background-position:140px 450px;
+	animation:logoanim 1s;
+    -webkit-animation: logoanim 1s;
+	-moz-animation: logoanim 1s;
+	-ms-animation: logoanim 1s;
+	-o-animation: logoanim 1s;
+	background-position:70px 150px;
+	background-size:70%;
+	float:left;
+}
+
+#bubbleTail{
+	height:58px;
+	width:106px;
+	background-image:url(../images/Bubble-tail.png);
+	background-size:contain;
+	position:absolute;
+	margin-left:700px;
+	margin-top:525px;
+}
+
+#bubble{
+	width:100%;
+	padding:20px 0px 20px 0px;
+	text-align:center;
+	background-color:white;
+	border-radius:20px;
+	float:left;
+	margin-top:80px;
+}
+
+
+
+@keyframes logoanim
+{
+	from {
+		background-position:140px 450px;
+	}
+	to {
+		background-position:70px 150px;
+	}
+}
+
+@-webkit-keyframes logoanim /* Safari and Chrome */
+{
+	from {
+		background-position:140px 450px;
+	}
+	to {
+		background-position:70px 150px;
+	}
+}
+@-moz-keyframes logoanim /* Firefox */
+{
+	from {
+		background-position:140px 450px;
+	}
+	to {
+		background-position:70px 150px;
+	}
+}
+@-ms-keyframes logoanim /* IE */
+{
+	from {
+		background-position:140px 450px;
+	}
+	to {
+		background-position:70px 150px;
+	}
+}
+@-o-keyframes logoanim /* Opera */
+{
+	from {
+		background-position:140px 450px;
+	}
+	to {
+		background-position:70px 150px;
+	}
+}
+
+
+@media screen and (max-width:1170px){
+	.four{
+		width:220px;
+		height:380px;
+	}
+	#logo{
+		width:380px;
+		height:380px;
+		border-radius:380px;
+		background-size:60%;
+	}
+	#bubbleTail{
+		margin-left:540px;
+		margin-top:405px;
+	}
+}
+@media screen and (max-width:920px){
+	.four{
+		width:160px;
+		height:260px;
+	}
+	#logo{
+		width:260px;
+		height:260px;
+		border-radius:260px;
+		background-size:45%;
+	}
+	#bubbleTail{
+		margin-left:390px;
+		margin-top:285px;
+	}
+	#navigation a{
+		visibility:hidden;
+	}
+	#navigation a:nth-child(1){
+		visibility:visible;
+	}
+}
+
+@media screen and (max-width:660px){
+	.four{
+		width:80px;
+		height:140px;
+	}
+	#logo{
+		width:140px;
+		height:140px;
+		border-radius:140px;
+		background-position:100px 100px;
+		animation:moblogoanim 1s;
+    	-webkit-animation: moblogoanim 1s;
+		-moz-animation: moblogoanim 1s;
+		-ms-animation: moblogoanim 1s;
+		-o-animation: moblogoanim 1s;
+		background-position:25px 25px;
+		background-size:70%;
+	}
+	#bubbleTail{
+		width:50px;
+		height:30px;
+		margin-left:190px;
+		margin-top:155px;
+	}
+	#content{
+		width:480px;
+	}
+	#bubble{
+		margin-top:40px;
+	}
+	p{
+		font-size:1.8em;
+	}
+}
+
+@keyframes moblogoanim
+{
+	from {
+		background-position:100px 100px;
+	}
+	to {
+		background-position:25px 25px;
+	}
+}
+
+@-webkit-keyframes moblogoanim /* Safari and Chrome */
+{
+	from {
+		background-position:100px 100px;
+	}
+	to {
+		background-position:25px 25px;
+	}
+}
+@-moz-keyframes moblogoanim /* Firefox */
+{
+	from {
+		background-position:100px 100px;
+	}
+	to {
+		background-position:25px 25px;
+	}
+}
+@-ms-keyframes moblogoanim /* IE */
+{
+	from {
+		background-position:100px 100px;
+	}
+	to {
+		background-position:25px 45px;
+	}
+}
+@-o-keyframes moblogoanim /* Opera */
+{
+	from {
+		background-position:100px 100px;
+	}
+	to {
+		background-position:25px 25px;
+	}
+}
+

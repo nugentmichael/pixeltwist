@@ -86,31 +86,32 @@ body {
 }
 /* line 52, ../sass/styles.scss */
 #navigation img {
+  float: left;
   margin-right: 50px;
   width: 200px;
   height: 66px;
 }
-/* line 57, ../sass/styles.scss */
+/* line 58, ../sass/styles.scss */
 #navigation ul {
   width: auto;
   float: right;
   padding: 0;
-  margin: 30px auto;
+  margin-top: 30px;
 }
-/* line 63, ../sass/styles.scss */
+/* line 64, ../sass/styles.scss */
 #navigation li {
   display: inline-block;
   float: right;
 }
-/* line 68, ../sass/styles.scss */
+/* line 69, ../sass/styles.scss */
 #navigation li:last-child a {
   border-right: 0;
 }
-/* line 72, ../sass/styles.scss */
+/* line 73, ../sass/styles.scss */
 #navigation a {
   text-align: right;
 }
-/* line 76, ../sass/styles.scss */
+/* line 77, ../sass/styles.scss */
 #navigation a:link {
   font-family: "denseregular", sans-serif;
   font-size: 24px;
@@ -119,49 +120,49 @@ body {
   text-decoration: none;
   text-transform: uppercase;
 }
-/* line 85, ../sass/styles.scss */
+/* line 86, ../sass/styles.scss */
 #navigation a:visited {
   color: #174a59;
 }
-/* line 89, ../sass/styles.scss */
+/* line 90, ../sass/styles.scss */
 #navigation a:hover {
   color: #7db6b0;
   transition: 0.3s ease-in-out;
   -webkit-transition: 0.3s ease-in-out;
 }
-/* line 95, ../sass/styles.scss */
+/* line 96, ../sass/styles.scss */
 #navigation a:active {
   text-decoration: none;
 }
-/* line 99, ../sass/styles.scss */
+/* line 100, ../sass/styles.scss */
 #navigation a[id="work"] {
   visibility: hidden;
 }
-/* line 104, ../sass/styles.scss */
+/* line 105, ../sass/styles.scss */
 #navigation a#pull {
   display: none;
 }
 
-/* line 109, ../sass/styles.scss */
+/* line 110, ../sass/styles.scss */
 ul.content li {
   display: block;
   height: 100%;
   width: 100%;
 }
 
-/* line 115, ../sass/styles.scss */
+/* line 116, ../sass/styles.scss */
 ul.content {
   top: 0;
   margin-top: 97px;
 }
 
-/* line 120, ../sass/styles.scss */
+/* line 121, ../sass/styles.scss */
 a[id="hero"], a[id="about"], a[id="work"], a[id="team"], a[id="blog"], a[id="contact"] {
   visibility: hidden;
   padding: 0 !important;
 }
 
-/* line 125, ../sass/styles.scss */
+/* line 126, ../sass/styles.scss */
 .bubble {
   padding: 20px 50px;
   margin: auto;
@@ -170,7 +171,7 @@ a[id="hero"], a[id="about"], a[id="work"], a[id="team"], a[id="blog"], a[id="con
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
 }
-/* line 133, ../sass/styles.scss */
+/* line 134, ../sass/styles.scss */
 .bubble h3 {
   font-family: "archiveregular", sans-serif;
   font-size: 36px;
@@ -179,7 +180,7 @@ a[id="hero"], a[id="about"], a[id="work"], a[id="team"], a[id="blog"], a[id="con
   margin: 7px 0px;
 }
 
-/* line 142, ../sass/styles.scss */
+/* line 143, ../sass/styles.scss */
 .speechBubble.top:before {
   margin: -20px 20px;
   bottom: auto;
@@ -187,7 +188,7 @@ a[id="hero"], a[id="about"], a[id="work"], a[id="team"], a[id="blog"], a[id="con
   border-width: 0 20px 20px;
 }
 
-/* line 149, ../sass/styles.scss */
+/* line 150, ../sass/styles.scss */
 .speechBubble:before {
   content: "";
   position: absolute;
@@ -200,36 +201,36 @@ a[id="hero"], a[id="about"], a[id="work"], a[id="team"], a[id="blog"], a[id="con
   width: 0;
 }
 
-/* line 160, ../sass/styles.scss */
+/* line 161, ../sass/styles.scss */
 #work .speechBubble.top:before {
   margin: -40px 20px;
 }
 
-/* line 164, ../sass/styles.scss */
+/* line 165, ../sass/styles.scss */
 #heroBubble {
   width: 600px;
   margin-left: 220px;
   padding: 0 !important;
 }
 
-/* line 170, ../sass/styles.scss */
+/* line 171, ../sass/styles.scss */
 .flex-control-nav {
   position: initial;
 }
-/* line 173, ../sass/styles.scss */
+/* line 174, ../sass/styles.scss */
 .flex-control-nav li {
   display: inline-block !important;
   width: auto !important;
 }
 
-/* line 179, ../sass/styles.scss */
+/* line 180, ../sass/styles.scss */
 #aboutBubble {
   /*float: left;*/
   /*margin-left: 20px;*/
   width: 500px;
 }
 
-/* line 185, ../sass/styles.scss */
+/* line 186, ../sass/styles.scss */
 #workBubble {
   width: 85%;
   padding: 20px 0px 0px !important;
@@ -239,7 +240,7 @@ a[id="hero"], a[id="about"], a[id="work"], a[id="team"], a[id="blog"], a[id="con
   -moz-border-radius: 15px;
 }
 
-/* line 194, ../sass/styles.scss */
+/* line 195, ../sass/styles.scss */
 #webBubble {
   cursor: pointer;
   display: inline-block;
@@ -250,35 +251,35 @@ a[id="hero"], a[id="about"], a[id="work"], a[id="team"], a[id="blog"], a[id="con
   -webkit-border-radius: 0px 0px 0px 15px;
   -moz-border-radius: 0px 0px 0px 15px;
 }
-/* line 206, ../sass/styles.scss */
+/* line 207, ../sass/styles.scss */
 #webBubble a:link {
   color: #174a59;
   text-decoration: none;
 }
-/* line 211, ../sass/styles.scss */
+/* line 212, ../sass/styles.scss */
 #webBubble a:visited {
   color: #174a59;
 }
-/* line 215, ../sass/styles.scss */
+/* line 216, ../sass/styles.scss */
 #webBubble a:hover {
   color: #7db6b0;
   transition: 0.3s ease-in-out;
   -webkit-transition: 0.3s ease-in-out;
 }
-/* line 223, ../sass/styles.scss */
+/* line 224, ../sass/styles.scss */
 #webBubble:hover {
   box-shadow: inset 0px 0px 6px #323232;
   transition: 0.2s ease-in-out;
   -webkit-transition: 0.2s ease-in-out;
 }
-/* line 229, ../sass/styles.scss */
+/* line 230, ../sass/styles.scss */
 #webBubble:hover a:link {
   color: #7db6b0;
   transition: 0.2s ease-in-out;
   -webkit-transition: 0.2s ease-in-out;
 }
 
-/* line 238, ../sass/styles.scss */
+/* line 239, ../sass/styles.scss */
 #audioBubble {
   cursor: pointer;
   display: inline-block;
@@ -289,35 +290,35 @@ a[id="hero"], a[id="about"], a[id="work"], a[id="team"], a[id="blog"], a[id="con
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
 }
-/* line 250, ../sass/styles.scss */
+/* line 251, ../sass/styles.scss */
 #audioBubble a:link {
   color: #174a59;
   text-decoration: none;
 }
-/* line 255, ../sass/styles.scss */
+/* line 256, ../sass/styles.scss */
 #audioBubble a:visited {
   color: #174a59;
 }
-/* line 259, ../sass/styles.scss */
+/* line 260, ../sass/styles.scss */
 #audioBubble a:hover {
   color: #7db6b0;
   transition: 0.3s ease-in-out;
   -webkit-transition: 0.3s ease-in-out;
 }
-/* line 267, ../sass/styles.scss */
+/* line 268, ../sass/styles.scss */
 #audioBubble:hover {
   box-shadow: inset 0px 0px 6px #323232;
   transition: 0.2s ease-in-out;
   -webkit-transition: 0.2s ease-in-out;
 }
-/* line 273, ../sass/styles.scss */
+/* line 274, ../sass/styles.scss */
 #audioBubble:hover a:link {
   color: #7db6b0;
   transition: 0.2s ease-in-out;
   -webkit-transition: 0.2s ease-in-out;
 }
 
-/* line 282, ../sass/styles.scss */
+/* line 283, ../sass/styles.scss */
 #videoBubble {
   cursor: pointer;
   display: inline-block;
@@ -328,35 +329,35 @@ a[id="hero"], a[id="about"], a[id="work"], a[id="team"], a[id="blog"], a[id="con
   -webkit-border-radius: 0px 0px 15px 0px;
   -moz-border-radius: 0px 0px 15px 0px;
 }
-/* line 294, ../sass/styles.scss */
+/* line 295, ../sass/styles.scss */
 #videoBubble a:link {
   color: #174a59;
   text-decoration: none;
 }
-/* line 299, ../sass/styles.scss */
+/* line 300, ../sass/styles.scss */
 #videoBubble a:visited {
   color: #174a59;
 }
-/* line 303, ../sass/styles.scss */
+/* line 304, ../sass/styles.scss */
 #videoBubble a:hover {
   color: #7db6b0;
   transition: 0.3s ease-in-out;
   -webkit-transition: 0.3s ease-in-out;
 }
-/* line 311, ../sass/styles.scss */
+/* line 312, ../sass/styles.scss */
 #videoBubble:hover {
   box-shadow: inset 0px 0px 6px #323232;
   transition: 0.2s ease-in-out;
   -webkit-transition: 0.2s ease-in-out;
 }
-/* line 317, ../sass/styles.scss */
+/* line 318, ../sass/styles.scss */
 #videoBubble:hover a:link {
   color: #7db6b0;
   transition: 0.2s ease-in-out;
   -webkit-transition: 0.2s ease-in-out;
 }
 
-/* line 326, ../sass/styles.scss */
+/* line 327, ../sass/styles.scss */
 .workExamples {
   float: left;
   width: 21%;
@@ -366,46 +367,46 @@ a[id="hero"], a[id="about"], a[id="work"], a[id="team"], a[id="blog"], a[id="con
   font-size: 24px;
   line-height: 24px;
 }
-/* line 335, ../sass/styles.scss */
+/* line 336, ../sass/styles.scss */
 .workExamples p {
   margin-left: 10px;
 }
 
-/* line 340, ../sass/styles.scss */
+/* line 341, ../sass/styles.scss */
 .exampleBubble {
   width: 150px;
   height: 110px;
   margin-bottom: 10px;
 }
-/* line 345, ../sass/styles.scss */
+/* line 346, ../sass/styles.scss */
 .exampleBubble img {
   width: 150px;
   height: auto;
 }
 
-/* line 351, ../sass/styles.scss */
+/* line 352, ../sass/styles.scss */
 #teamBubble {
   width: 600px;
   margin-left: 20px;
 }
-/* line 355, ../sass/styles.scss */
+/* line 356, ../sass/styles.scss */
 #teamBubble h3 {
   color: #fdad74;
 }
 
-/* line 360, ../sass/styles.scss */
+/* line 361, ../sass/styles.scss */
 #blogBubble {
   width: 600px;
   margin-left: 20px;
 }
 
-/* line 365, ../sass/styles.scss */
+/* line 366, ../sass/styles.scss */
 #contactBubble {
   width: 600px;
   margin-left: 20px;
 }
 
-/* line 370, ../sass/styles.scss */
+/* line 371, ../sass/styles.scss */
 #hero {
   margin-top: 80px;
   padding: 80px 0px 20px;
@@ -413,20 +414,20 @@ a[id="hero"], a[id="about"], a[id="work"], a[id="team"], a[id="blog"], a[id="con
   height: 700px;
   background-color: #7db6b0;
 }
-/* line 377, ../sass/styles.scss */
+/* line 378, ../sass/styles.scss */
 #hero img {
   display: block;
   margin: 10px auto;
 }
 
-/* line 383, ../sass/styles.scss */
+/* line 384, ../sass/styles.scss */
 #about {
   height: 100%;
   padding: 120px 20px 20px;
   background-color: #e46350;
   margin: 0 auto;
 }
-/* line 390, ../sass/styles.scss */
+/* line 391, ../sass/styles.scss */
 #about #workdisplay {
   width: 470px;
   position: relative;
@@ -434,7 +435,7 @@ a[id="hero"], a[id="about"], a[id="work"], a[id="team"], a[id="blog"], a[id="con
   /*background-color:#0f0;*/
   clear: both;
 }
-/* line 398, ../sass/styles.scss */
+/* line 399, ../sass/styles.scss */
 #about #aboutCircle {
   display: block;
   padding: 35px;
@@ -451,7 +452,7 @@ a[id="hero"], a[id="about"], a[id="work"], a[id="team"], a[id="blog"], a[id="con
   position: relative;
   /*clear:right;*/
 }
-/* line 416, ../sass/styles.scss */
+/* line 417, ../sass/styles.scss */
 #about h2 {
   font-family: "denseregular", sans-serif;
   font-weight: bold;
@@ -459,7 +460,7 @@ a[id="hero"], a[id="about"], a[id="work"], a[id="team"], a[id="blog"], a[id="con
   font-size: 72px;
   margin: 55px 0px 20px 20px;
 }
-/* line 424, ../sass/styles.scss */
+/* line 425, ../sass/styles.scss */
 #about p {
   margin-left: 20px;
   font-family: "denseregular", sans-serif;
@@ -467,7 +468,7 @@ a[id="hero"], a[id="about"], a[id="work"], a[id="team"], a[id="blog"], a[id="con
   font-weight: normal;
   color: #174a59;
 }
-/* line 432, ../sass/styles.scss */
+/* line 433, ../sass/styles.scss */
 #about #jobs {
   position: absolute;
   /*margin-top: 475px;
@@ -477,7 +478,7 @@ a[id="hero"], a[id="about"], a[id="work"], a[id="team"], a[id="blog"], a[id="con
   /*margin-left:500px;*/
   width: 100%;
 }
-/* line 443, ../sass/styles.scss */
+/* line 444, ../sass/styles.scss */
 #about .icons {
   width: 110px;
   height: 110px;
@@ -487,7 +488,7 @@ a[id="hero"], a[id="about"], a[id="work"], a[id="team"], a[id="blog"], a[id="con
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
 }
-/* line 453, ../sass/styles.scss */
+/* line 454, ../sass/styles.scss */
 #about #jobs li {
   margin: 0;
   padding: 0;
@@ -496,12 +497,12 @@ a[id="hero"], a[id="about"], a[id="work"], a[id="team"], a[id="blog"], a[id="con
   display: inline-block;
   margin: 2%;
 }
-/* line 463, ../sass/styles.scss */
+/* line 464, ../sass/styles.scss */
 #about #jobs a {
   /*height: 113px;*/
   display: block;
 }
-/* line 469, ../sass/styles.scss */
+/* line 470, ../sass/styles.scss */
 #about #audio {
   cursor: pointer;
   background-position: -7px -112px;
@@ -509,13 +510,13 @@ a[id="hero"], a[id="about"], a[id="work"], a[id="team"], a[id="blog"], a[id="con
   left: -140px;
   top: 150px;
 }
-/* line 476, ../sass/styles.scss */
+/* line 477, ../sass/styles.scss */
 #about #audio:hover {
   background-position: -7px 1px;
   transition: 0.2s ease-in-out;
   -webkit-transition: 0.2s ease-in-out;
 }
-/* line 482, ../sass/styles.scss */
+/* line 483, ../sass/styles.scss */
 #about #video {
   cursor: pointer;
   background-position: -120px -112px;
@@ -525,13 +526,13 @@ a[id="hero"], a[id="about"], a[id="work"], a[id="team"], a[id="blog"], a[id="con
   top: -40px;
   z-index: 999;
 }
-/* line 491, ../sass/styles.scss */
+/* line 492, ../sass/styles.scss */
 #about #video:hover {
   background-position: -120px 1px;
   transition: 0.2s ease-in-out;
   -webkit-transition: 0.2s ease-in-out;
 }
-/* line 497, ../sass/styles.scss */
+/* line 498, ../sass/styles.scss */
 #about #design {
   cursor: pointer;
   background-position: -233px -112px;
@@ -541,13 +542,13 @@ a[id="hero"], a[id="about"], a[id="work"], a[id="team"], a[id="blog"], a[id="con
   right: 160px;
   z-index: 999;
 }
-/* line 507, ../sass/styles.scss */
+/* line 508, ../sass/styles.scss */
 #about #design:hover {
   background-position: -233px 1px;
   transition: 0.2s ease-in-out;
   -webkit-transition: 0.2s ease-in-out;
 }
-/* line 513, ../sass/styles.scss */
+/* line 514, ../sass/styles.scss */
 #about #development {
   cursor: pointer;
   background-position: -346px -112px;
@@ -556,13 +557,13 @@ a[id="hero"], a[id="about"], a[id="work"], a[id="team"], a[id="blog"], a[id="con
   top: -40px;
   right: -40px;
 }
-/* line 522, ../sass/styles.scss */
+/* line 523, ../sass/styles.scss */
 #about #development:hover {
   background-position: -346px 1px;
   transition: 0.2s ease-in-out;
   -webkit-transition: 0.2s ease-in-out;
 }
-/* line 528, ../sass/styles.scss */
+/* line 529, ../sass/styles.scss */
 #about #marketing {
   cursor: pointer;
   background-position: -459px -112px;
@@ -572,25 +573,25 @@ a[id="hero"], a[id="about"], a[id="work"], a[id="team"], a[id="blog"], a[id="con
   float: right;
   z-index: 99;
 }
-/* line 538, ../sass/styles.scss */
+/* line 539, ../sass/styles.scss */
 #about #marketing:hover {
   background-position: -459px 1px;
   transition: 0.2s ease-in-out;
   -webkit-transition: 0.2s ease-in-out;
 }
 
-/* line 547, ../sass/styles.scss */
+/* line 548, ../sass/styles.scss */
 #work {
   width: 100%;
   height: 100%;
   padding: 120px 20px 20px;
   background-color: #fdad74;
 }
-/* line 553, ../sass/styles.scss */
+/* line 554, ../sass/styles.scss */
 #work img {
   display: none;
 }
-/* line 557, ../sass/styles.scss */
+/* line 558, ../sass/styles.scss */
 #work #nav {
   border-top: 1px solid #fdad74;
   background: #fdad74;
@@ -600,30 +601,30 @@ a[id="hero"], a[id="about"], a[id="work"], a[id="team"], a[id="blog"], a[id="con
   -webkit-border-radius: 0px 0px 15px 15px;
   -moz-border-radius: 0px 0px 15px 15px;
 }
-/* line 567, ../sass/styles.scss */
+/* line 568, ../sass/styles.scss */
 #work #backflipStudios .exampleBubble {
   background: url(../images/backflipStudios.png) no-repeat top center;
 }
-/* line 570, ../sass/styles.scss */
+/* line 571, ../sass/styles.scss */
 #work #theBluePepperGrill .exampleBubble {
   background: url(../images/theBluePepperGrill.png) no-repeat top center;
 }
-/* line 573, ../sass/styles.scss */
+/* line 574, ../sass/styles.scss */
 #work #peacefulPlay .exampleBubble {
   background: url(../images/peacefulPlay.png) no-repeat top center;
 }
-/* line 576, ../sass/styles.scss */
+/* line 577, ../sass/styles.scss */
 #work #mercuryInsurance .exampleBubble {
   background: url(../images/mercuryInsurance.png) no-repeat top left;
 }
 
-/* line 583, ../sass/styles.scss */
+/* line 584, ../sass/styles.scss */
 #team {
   height: 700px;
   padding: 120px 20px 20px;
   background-color: #894378;
 }
-/* line 588, ../sass/styles.scss */
+/* line 589, ../sass/styles.scss */
 #team #photos {
   position: relative;
   display: block;
@@ -631,13 +632,13 @@ a[id="hero"], a[id="about"], a[id="work"], a[id="team"], a[id="blog"], a[id="con
   max-width: 1215px;
   padding: 20px;
 }
-/* line 596, ../sass/styles.scss */
+/* line 597, ../sass/styles.scss */
 #team img {
   width: 300px;
   height: auto;
   background-color: #fdad74;
 }
-/* line 602, ../sass/styles.scss */
+/* line 603, ../sass/styles.scss */
 #team span {
   position: absolute;
   margin-top: 200px;
@@ -658,7 +659,7 @@ a[id="hero"], a[id="about"], a[id="work"], a[id="team"], a[id="blog"], a[id="con
   transition: all 0.5s ease;
 }
 
-/* line 623, ../sass/styles.scss */
+/* line 624, ../sass/styles.scss */
 #overlay {
   position: fixed;
   top: 0;
@@ -668,12 +669,12 @@ a[id="hero"], a[id="about"], a[id="work"], a[id="team"], a[id="blog"], a[id="con
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 100;
 }
-/* line 632, ../sass/styles.scss */
+/* line 633, ../sass/styles.scss */
 #overlay img {
   float: left;
   margin: 230px 0 0 90px;
 }
-/* line 637, ../sass/styles.scss */
+/* line 638, ../sass/styles.scss */
 #overlay h3 {
   float: left;
   font-family: "archiveregular", sans-serif;
@@ -682,7 +683,7 @@ a[id="hero"], a[id="about"], a[id="work"], a[id="team"], a[id="blog"], a[id="con
   text-transform: uppercase;
   margin: 230px 0 0 30px;
 }
-/* line 646, ../sass/styles.scss */
+/* line 647, ../sass/styles.scss */
 #overlay p {
   font-family: "denseregular", sans-serif;
   font-size: 36px;
@@ -691,20 +692,20 @@ a[id="hero"], a[id="about"], a[id="work"], a[id="team"], a[id="blog"], a[id="con
   margin: 290px 0 0 525px;
 }
 
-/* line 655, ../sass/styles.scss */
+/* line 656, ../sass/styles.scss */
 #blog {
   height: 100%;
   padding: 120px 20px 20px;
   background-color: #7db6b0;
 }
-/* line 660, ../sass/styles.scss */
+/* line 661, ../sass/styles.scss */
 #blog h4 {
   font-family: "archiveregular", sans-serif;
   font-size: 36px;
   color: #174a59;
   margin: 7px 0px;
 }
-/* line 667, ../sass/styles.scss */
+/* line 668, ../sass/styles.scss */
 #blog .blogArticle {
   font-family: "denseregular", sans-serif;
   font-size: 24px;
@@ -712,20 +713,20 @@ a[id="hero"], a[id="about"], a[id="work"], a[id="team"], a[id="blog"], a[id="con
   color: #7db6b0;
 }
 
-/* line 675, ../sass/styles.scss */
+/* line 676, ../sass/styles.scss */
 #contact {
   height: 525px;
   padding: 120px 20px 20px;
   background-color: #fdad74;
 }
-/* line 680, ../sass/styles.scss */
+/* line 681, ../sass/styles.scss */
 #contact #map_canvas {
   float: left;
   width: 500px;
   height: 400px;
   margin: 25px 0 0 100px;
 }
-/* line 687, ../sass/styles.scss */
+/* line 688, ../sass/styles.scss */
 #contact form {
   float: left;
   width: 500px;
@@ -737,7 +738,7 @@ a[id="hero"], a[id="about"], a[id="work"], a[id="team"], a[id="blog"], a[id="con
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
 }
-/* line 700, ../sass/styles.scss */
+/* line 701, ../sass/styles.scss */
 #contact form fieldset input {
   margin-bottom: 10px;
   padding: 5px 10px;
@@ -752,16 +753,16 @@ a[id="hero"], a[id="about"], a[id="work"], a[id="team"], a[id="blog"], a[id="con
   border: none;
   background-color: #DDD;
 }
-/* line 714, ../sass/styles.scss */
+/* line 715, ../sass/styles.scss */
 #contact form fieldset input:focus {
   background-color: #EEE;
   outline: none;
 }
-/* line 720, ../sass/styles.scss */
+/* line 721, ../sass/styles.scss */
 #contact form fieldset select {
   color: #174a59;
 }
-/* line 724, ../sass/styles.scss */
+/* line 725, ../sass/styles.scss */
 #contact form fieldset textarea {
   color: #174a59;
   font-family: "denseregular", sans-serif;
@@ -775,12 +776,12 @@ a[id="hero"], a[id="about"], a[id="work"], a[id="team"], a[id="blog"], a[id="con
   -moz-border-radius: 5px;
   resize: none;
 }
-/* line 737, ../sass/styles.scss */
+/* line 738, ../sass/styles.scss */
 #contact form fieldset textarea:focus {
   background-color: #FFF;
   outline: none;
 }
-/* line 743, ../sass/styles.scss */
+/* line 744, ../sass/styles.scss */
 #contact form fieldset button {
   float: right;
   cursor: pointer;
@@ -792,7 +793,7 @@ a[id="hero"], a[id="about"], a[id="work"], a[id="team"], a[id="blog"], a[id="con
   border: none;
 }
 
-/* line 757, ../sass/styles.scss */
+/* line 758, ../sass/styles.scss */
 #footer {
   width: 100%;
   height: 100px;
@@ -801,20 +802,20 @@ a[id="hero"], a[id="about"], a[id="work"], a[id="team"], a[id="blog"], a[id="con
   color: #FFF;
   font-size: 30px;
 }
-/* line 765, ../sass/styles.scss */
+/* line 766, ../sass/styles.scss */
 #footer p {
   display: inline-block;
   padding: 38px 20px;
   font-weight: bold;
 }
-/* line 771, ../sass/styles.scss */
+/* line 772, ../sass/styles.scss */
 #footer img {
   float: right;
   margin: 30px;
 }
 
 /**extra**/
-/* line 779, ../sass/styles.scss */
+/* line 780, ../sass/styles.scss */
 .clearfix:after {
   content: ".";
   display: block;
@@ -824,17 +825,17 @@ a[id="hero"], a[id="about"], a[id="work"], a[id="team"], a[id="blog"], a[id="con
   height: 0;
 }
 
-/* line 788, ../sass/styles.scss */
+/* line 789, ../sass/styles.scss */
 .clearfix {
   display: inline-block;
 }
 
-/* line 792, ../sass/styles.scss */
+/* line 793, ../sass/styles.scss */
 html[xmlns] .clearfix {
   display: block;
 }
 
-/* line 796, ../sass/styles.scss */
+/* line 797, ../sass/styles.scss */
 * html .clearfix {
   height: 1%;
 }

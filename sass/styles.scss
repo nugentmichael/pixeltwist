@@ -50,6 +50,7 @@ body {
 	z-index: 1000;
 
 	img {
+		float: left;
 		margin-right: 50px;
 		width: 200px;
 		height: 66px;
@@ -58,7 +59,7 @@ body {
 		width:auto;
 		float:right;
 		padding:0;
-		margin:30px auto;
+		margin-top: 30px;
 	}
 	li{
 		display:inline-block;

@@ -29,7 +29,7 @@ $(function() {
         $(this).siblings("div").fadeOut(200);
       }
       details_closed = !details_closed;
-    })
+    });
 
   $('.flexslider').flexslider({
     animation: "slide",

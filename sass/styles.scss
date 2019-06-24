@@ -91,7 +91,7 @@ body {
             text-decoration: none;
         }
 
-        &[id="work"] {
+        &#work {
             visibility: hidden;
         }
 
@@ -164,27 +164,39 @@ a#contact {
 }
 
 #heroBubble {
-    width: 600px;
-    margin-left: 220px;
-    padding: 0 !important;
-}
+    width: 70%;
+    margin: 0 auto;
+    padding: 0 2em;
 
-.flex-control-nav {
-    position: initial;
+    .flex-control-nav {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
 
-    li {
-        display: inline-block !important;
-        width: auto !important;
+        li {
+            width: auto;
+        }
     }
 }
 
-#aboutBubble {
-    width: 500px;
+#aboutBubble,
+#workBubble,
+#teamBubble,
+#blogBubble,
+#contactBubble {
+    width: 60%;
+    margin: 0 auto;
 }
 
 #workBubble {
     width: 85%;
-    padding: 20px 0px 0px !important;
+    padding: 20px 0px 0px;
     margin-bottom: 5px;
     border-radius: 15px;
     -webkit-border-radius: 15px;
@@ -365,20 +377,22 @@ a#contact {
 }
 
 #hero {
+    margin-top: 0;
+    padding-bottom: 100px;
     width: 100%;
     height: 700px;
     background-color: $teal;
 
     img {
         display: block;
-        margin: auto;
+        margin: 2m auto;
+        width: 90%;
     }
 }
 
 #about {
-
     height: 100%;
-    padding: 120px 20px 20px;
+    padding: 130px 20px 20px;
     background-color: $red;
     margin: 1em auto;
 
@@ -390,7 +404,7 @@ a#contact {
     }
 
     #aboutCircle {
-		position: relative;
+        position: relative;
         display: block;
         padding: 35px;
         width: 400px;
@@ -443,13 +457,11 @@ a#contact {
         padding: 0;
         list-style: none;
         display: inline-block;
-        margin: 2%;
 
     }
 
     #jobs a {
         display: block;
-
     }
 
     #audio {
@@ -488,7 +500,7 @@ a#contact {
         position: absolute;
         float: none;
         top: -120px;
-        right: 160px;
+        right: 175px;
         z-index: 999;
     }
 
@@ -528,8 +540,6 @@ a#contact {
         transition: 0.2s ease-in-out;
         -webkit-transition: 0.2s ease-in-out;
     }
-
-
 }
 
 #work {
@@ -567,21 +577,21 @@ a#contact {
     #mercuryInsurance .exampleBubble {
         background: url('../images/mercuryInsurance.png') no-repeat top left;
     }
-
-
 }
 
 #team {
-    height: 700px;
+    width: 100%;
+    height: 100%;
     padding: 120px 20px 20px;
     background-color: $purple;
 
     #photos {
         position: relative;
         display: block;
-        margin: auto;
-        max-width: 1215px;
-        padding: 20px;
+        margin: 30px auto 20px;
+        width: 86%;
+        max-width: 1200px;
+        padding: 0;
     }
 
     img {
@@ -606,6 +616,34 @@ a#contact {
         opacity: 0;
         -webkit-transition: all 0.5s ease;
         transition: all 0.5s ease;
+    }
+
+    .teammate {
+        width: 25%;
+        height: auto;
+        background-color: $purple;
+        float: left;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+        }
+
+        span {
+            width: 25%;
+            height: 80px;
+            margin-top: 200px;
+            background-color: rgba(0, 0, 0, 0.6);
+            font-family: $archive;
+            color: #FFF;
+            font-size: 18px;
+            line-height: 1.5em;
+            text-align: center;
+            z-index: 10;
+            opacity: 0;
+            -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+        }
     }
 }
 
@@ -662,20 +700,20 @@ a#contact {
 }
 
 #contact {
-    height: 525px;
-    padding: 120px 20px 20px;
+    width: 100%;
+    padding: 120px 20px 0px;
     background-color: $peach;
 
     #map_canvas {
         float: left;
-        width: 500px;
+        width: 50%;
         height: 400px;
-        margin: 25px 0 0 100px;
+        margin: 25px 0 0 0px;
     }
 
     form {
         float: left;
-        width: 500px;
+        width: 40%;
         height: 363px;
         margin: 25px 0 0 10px;
         padding: 20px;
@@ -684,9 +722,7 @@ a#contact {
         -webkit-border-radius: 15px;
         -moz-border-radius: 15px;
 
-        fieldset {
-
-            input {
+        fieldset input {
                 margin-bottom: 10px;
                 padding: 5px 10px;
                 width: 95%;
@@ -715,6 +751,7 @@ a#contact {
                 font-family: $dense;
                 font-size: 30px;
                 width: 95%;
+                height: auto;
                 background-color: #DDD;
                 border: none;
                 padding: 5px 10px;
@@ -739,13 +776,12 @@ a#contact {
                 padding: 5px 30px;
                 border: none;
             }
-        }
     }
 }
 
 #footer {
     width: 100%;
-    height: 100px;
+    height: 100%;
     background-color: $red;
     font-family: $dense;
     color: #FFF;
@@ -754,15 +790,18 @@ a#contact {
     p {
         display: inline-block;
         padding: 38px 20px;
-        font-weight: bold;
     }
 
     img {
         float: right;
         margin: 30px;
     }
-}
 
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+}
 
 /**extra**/
 .clearfix::after {
@@ -784,4 +823,437 @@ html[xmlns] .clearfix {
 
 * html .clearfix {
     height: 1%;
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (max-width: 800px) {
+
+    #navigation {
+        border-bottom: 0;
+
+        ul {
+            display: none;
+            height: 25px;
+            position: absolute;
+            top: 10px;
+            right: 30px;
+            text-align: left;
+        }
+
+        ul li {
+            background-color: $darkblue;
+            padding: 3px 0 3px 10px;
+
+            &:hover {
+                background-color: $teal;
+            }
+        }
+
+        a {
+            color: #FFF;
+
+            &:link {
+                color: #FFF;
+            }
+
+            &:visited {
+                color: #FFF;
+            }
+        }
+
+        a#pull {
+            display: block;
+            margin-right: 10px;
+            float: right;
+        }
+
+        a#pull:after {
+            content: "";
+            background: url('../images/nav-icon.png') no-repeat center;
+            background-color: $darkblue;
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            position: absolute;
+            right: 30px;
+            top: 10px;
+        }
+
+        li {
+            display: block;
+            float: none;
+            width: 140px;
+        }
+
+        li a {
+            border-bottom: 1px;
+        }
+    }
+
+    .bubble {
+        h3 {
+            font-size: 24px;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .slides h3 {
+            width: 86%;
+            padding: 15px 0% 15px;
+            text-align: left;
+        }
+
+        .slides li:first-child h3 {
+            font-size: 55px;
+            text-align: left;
+        }
+    }
+
+    #aboutBubble,
+    #workBubble,
+    #teamBubble,
+    #contactBubble {
+        width: 90%;
+    }
+
+    #footer {
+        font-size: 22px;
+
+        p {
+            display: inline-block;
+            padding: 38px 4px;
+        }
+    }
+
+    #team {
+        #photos {
+            width: 80%;
+
+            .teammate {
+                width: 50%;
+
+                span {
+                    width: 50%;
+                }
+
+            }
+        }
+
+    }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (max-width : 480px) {
+    #contact {
+        #map_canvas {
+            display: none;
+        }
+
+        form {
+            width: 80%;
+            margin: 0 auto;
+            float: none;
+
+            fieldset input {
+                padding: 1px 10px;
+                width: 95%;
+            }
+        }
+    }
+
+    #about {
+        height: 100%;
+        padding: 120px 20px 20px;
+        background-color: $red;
+        margin: 0 auto;
+
+        #workdisplay {
+            width: 100%;
+            position: relative;
+            margin: 130px auto;
+            clear: both;
+        }
+
+        #aboutCircle {
+            position: relative;
+            display: block;
+            padding: 15px;
+            width: 80%;
+            height: auto;
+            border: 7px solid $darkblue;
+            border-radius: 0;
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            background-color: #FFF;
+            box-shadow: 3px 3px 7px $grey;
+            -webkit-box-shadow: 3px 3px 7px $grey;
+            -moz-box-shadow: 3px 3px 7px $grey;
+        }
+
+        h2 {
+            font-family: $dense;
+            font-weight: bold;
+            color: $red;
+            font-size: 72px;
+            margin: 15px 0px 20px 20px;
+        }
+
+        p {
+            margin-left: 20px;
+            font-family: $dense;
+            font-size: 30px;
+            font-weight: normal;
+            color: $darkblue;
+        }
+
+        #jobs {
+            position: absolute;
+            margin: 0 auto;
+            width: 100%;
+            margin-top: -110px;
+        }
+
+        .icons {
+            width: 110px;
+            height: 110px;
+            background: url('../images/icons.png') no-repeat;
+            background-color: none;
+            border-radius: 0;
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+        }
+
+        #jobs li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: inline-block;
+            width: 31%;
+            margin-left: -11%;
+        }
+
+        #audio {
+            cursor: pointer;
+            background-position: -7px -112px;
+            position: relative;
+            float: left;
+            left: 0px;
+            top: 0px;
+            z-index: 999;
+        }
+
+        #video {
+            cursor: pointer;
+            background-position: -120px -112px;
+            position: relative;
+            float: left;
+            top: 0px;
+            left: 0px;
+            z-index: 999;
+        }
+
+        #design {
+            cursor: pointer;
+            background-position: -233px -112px;
+            position: relative;
+            float: left;
+            top: 0px;
+            left: 0px;
+            z-index: 999;
+        }
+
+        #development {
+            cursor: pointer;
+            background-position: -346px -112px;
+            position: relative;
+            float: left;
+            top: 0px;
+            left: 0px;
+            z-index: 999;
+        }
+
+        #marketing {
+            cursor: pointer;
+            background-position: -459px -112px;
+            position: relative;
+            top: 0px;
+            left: 0px;
+            float: left;
+            z-index: 999;
+        }
+    }
+
+    #team {
+        .teammate {
+            span {
+                height: 40px;
+                margin-top: 120px;
+                font-family: $archive;
+                color: #FFF;
+                font-size: 14px;
+                line-height: 1.2em;
+            }
+        }
+
+    }
+
+    #workBubble {
+        margin-bottom: 0;
+        border-radius: 15px;
+    }
+
+    #webBubble {
+        border: none;
+        width: 32.8%;
+        padding: 0;
+        margin-top: 3px;
+        border-radius: 0px 0px 0px 15px;
+        -webkit-border-radius: 0px 0px 0px 15px;
+        -moz-border-radius: 0px 0px 0px 15px;
+
+        a {
+
+            &:link {
+                color: $darkblue;
+                text-decoration: none;
+            }
+
+            &:visited {
+                color: $darkblue;
+            }
+
+            &:hover {
+                color: $teal;
+                transition: 0.3s ease-in-out;
+                -webkit-transition: 0.3s ease-in-out;
+            }
+
+        }
+
+        &:hover {
+            -webkit-box-shadow: inset 0px 0px 6px $grey;
+            box-shadow: inset 0px 0px 6px $grey;
+            transition: 0.2s ease-in-out;
+            -webkit-transition: 0.2s ease-in-out;
+
+            a {
+                &:link {
+                    color: $teal;
+                    transition: 0.2s ease-in-out;
+                    -webkit-transition: 0.2s ease-in-out;
+                }
+            }
+        }
+    }
+
+    #audioBubble {
+        cursor: pointer;
+        display: inline-block;
+        border: none;
+        width: 31%;
+        padding: 0;
+        margin-top: 3px;
+
+        a {
+            &:link {
+                color: $darkblue;
+                text-decoration: none;
+            }
+
+            &:visited {
+                color: $darkblue;
+            }
+
+            &:hover {
+                color: $teal;
+                transition: 0.3s ease-in-out;
+                -webkit-transition: 0.3s ease-in-out;
+            }
+
+        }
+
+        &:hover {
+            -webkit-box-shadow: inset 0px 0px 6px $grey;
+            box-shadow: inset 0px 0px 6px $grey;
+            transition: 0.2s ease-in-out;
+            -webkit-transition: 0.2s ease-in-out;
+
+            a {
+                &:link {
+                    color: $teal;
+                    transition: 0.2s ease-in-out;
+                    -webkit-transition: 0.2s ease-in-out;
+                }
+            }
+        }
+    }
+
+    #videoBubble {
+        cursor: pointer;
+        display: inline-block;
+        border: none;
+        width: 32.95%;
+        padding: 0;
+        margin-top: 3px;
+
+        a {
+            &:link {
+                color: $darkblue;
+                text-decoration: none;
+            }
+
+            &:visited {
+                color: $darkblue;
+            }
+
+            &:hover {
+                color: $teal;
+                transition: 0.3s ease-in-out;
+                -webkit-transition: 0.3s ease-in-out;
+            }
+        }
+
+        &:hover {
+            -webkit-box-shadow: inset 0px 0px 6px $grey;
+            box-shadow: inset 0px 0px 6px $grey;
+            transition: 0.2s ease-in-out;
+            -webkit-transition: 0.2s ease-in-out;
+
+            a {
+                &:link {
+                    color: $teal;
+                    transition: 0.2s ease-in-out;
+                    -webkit-transition: 0.2s ease-in-out;
+                }
+            }
+        }
+    }
+
+    .workExamples {
+        float: left;
+        width: 80%;
+        margin-left: 15px;
+    }
+
+    .exampleBubble {
+        min-height: 200px;
+    }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 335px) {
+
+    /* Styles */
+    #navigation {
+        a#pull {
+            margin-top: -60px;
+        }
+    }
+
+    .bubble .slides h3 {
+        text-align: left;
+        font-size: 14px;
+        width: 100%;
+        margin: 0 auto;
+    }
 }

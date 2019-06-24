@@ -40,26 +40,26 @@ $(function() {
 
     // #backflipStudios, #theBluePepperGrill, #peacefulPlay, #mercuryInsurance, #composure
 
-	$('.bubble').on('click', function() {
-		switch (this.id) {
-			case 'webBubble':
-				$('#backflipStudios').hide('slow');
-				$('#theBluePepperGrill, #peacefulPlay, #mercuryInsurance, #composure').show('slow');
-				break;
-			case 'audioBubble':
-				$('#theBluePepperGrill, #peacefulPlay, #mercuryInsurance').hide('slow');
-				$('#backflipStudios, #composure').show('slow');
-				break;
-			case 'videoBubble':
-				$('#theBluePepperGrill').hide('slow');
-				$('#backflipStudios, #peacefulPlay, #mercuryInsurance, #composure').show('slow');
-				break;
-			default:
-				break;
-		}
+    $('.bubble').on('click', function() {
+        switch (this.id) {
+            case 'webBubble':
+                $('#backflipStudios').hide('slow');
+                $('#theBluePepperGrill, #peacefulPlay, #mercuryInsurance, #composure').show('slow');
+                break;
+            case 'audioBubble':
+                $('#theBluePepperGrill, #peacefulPlay, #mercuryInsurance').hide('slow');
+                $('#backflipStudios, #composure').show('slow');
+                break;
+            case 'videoBubble':
+                $('#theBluePepperGrill').hide('slow');
+                $('#backflipStudios, #peacefulPlay, #mercuryInsurance, #composure').show('slow');
+                break;
+            default:
+                break;
+        }
     });
 
-	$('.exampleBubble').on('mouseenter', function() {
+    $('.exampleBubble').on('mouseenter', function() {
         $(this).css({
             'cursor': 'pointer',
             'opacity': '0.5',
@@ -68,7 +68,7 @@ $(function() {
         }).fadeIn('slow');
     });
 
-	$('.exampleBubble').on('mouseout', function() {
+    $('.exampleBubble').on('mouseout', function() {
         $(this).css({
             'cursor': 'pointer',
             'opacity': '1.0',
@@ -78,29 +78,29 @@ $(function() {
     });
 
     $('.workExamples').on('click', function() {
-		var description = $(this).text;
-		
-		switch ($(this).attr('id')) {
-			case 'backflipStudios':
-				description = 'Backflip Studios is a production company headquartered in Ottawa with popular recent Canada-wide releases. They wanted to promote their most ambitious project yet, which is where we came in.';
-				break;
-			case 'theBluePepperGrill':
-				description = 'With locations across Ontario and looking beyond, The Blue Pepper Grill needed a fresh face to lead it’s growth to western Canada.';
-				break;
-			case 'peacefulPlay':
-				description = 'In order to spread their work on a global scale Peaceful Play had to work hard to break into the crowded not-for-profit sector. We were more than happy to accompany them in Africa to help shoot video for use on their website.';
-				break;
-			case 'mercuryInsurance':
-				description = 'Being the most popular insurance company among young drivers, Mercury Insurance decided to target its audience in a campaign to reduce distracted driving. We knew we just had to help out with this very worthwhile cause.';
-				break;
-			case 'composure':
-				description = 'In one of our most ambitious projects yet, we worked with the creators of the upcoming release, Composure, helping them produce and edit teaser trailers. Along with this, we developed their web presence as well as their marketing plan for the release of Composure.';
-				break;
-			default:
-				break;
-		}
+        var description = $(this).text;
 
-		var overlay = $('<div id="overlay"><div><h3>' + $(this).attr('id') + '</h3>' + '<div class="details"><img src="images/' + $(this).attr('id') + '.png" alt="' + $(this).attr('id') + '"><p>' + description + '</p></div></div></div>');
+        switch ($(this).attr('id')) {
+            case 'backflipStudios':
+                description = 'Backflip Studios is a production company headquartered in Ottawa with popular recent Canada-wide releases. They wanted to promote their most ambitious project yet, which is where we came in.';
+                break;
+            case 'theBluePepperGrill':
+                description = 'With locations across Ontario and looking beyond, The Blue Pepper Grill needed a fresh face to lead it’s growth to western Canada.';
+                break;
+            case 'peacefulPlay':
+                description = 'In order to spread their work on a global scale Peaceful Play had to work hard to break into the crowded not-for-profit sector. We were more than happy to accompany them in Africa to help shoot video for use on their website.';
+                break;
+            case 'mercuryInsurance':
+                description = 'Being the most popular insurance company among young drivers, Mercury Insurance decided to target its audience in a campaign to reduce distracted driving. We knew we just had to help out with this very worthwhile cause.';
+                break;
+            case 'composure':
+                description = 'In one of our most ambitious projects yet, we worked with the creators of the upcoming release, Composure, helping them produce and edit teaser trailers. Along with this, we developed their web presence as well as their marketing plan for the release of Composure.';
+                break;
+            default:
+                break;
+        }
+
+        var overlay = $('<div id="overlay"><div><h3>' + $(this).attr('id') + '</h3>' + '<div class="details"><img src="images/' + $(this).attr('id') + '.png" alt="' + $(this).attr('id') + '"><p>' + description + '</p></div></div></div>');
 
         overlay.appendTo(document.body).show('slow');
 
@@ -113,126 +113,116 @@ $(function() {
         }
     });
 
-	$('.icons').on('click', function() {
-		switch (this.id) {
-			case 'audio':
-				$('#aboutCircle').html('<h2>Audio</h2><p>Our seasoned audio pros can handle the most particular auditory demands thrown at them. We have a full sound studio stacked to the ceiling with equipment capable of perfecting each sound down to the decibel.</p>');
-				break;
-			case 'video':
-				$('#aboutCircle').html('<h2>Video</h2><p>Our video experts can find a photogenic in anybody or anything they capture in front of the camera. Our decked out video room including our newest addition, a Canon EOS C100, means we can cast any ideas in its best light.</p>');
-				break;
-			case 'design':
-				$('#aboutCircle').html('<h2>Design</h2><p>We have a stable of brilliant designers eager to be let loose to stretch their creative legs. Their expertise spans any project from print to web. Close consideration is paid to UI and UX design so each page functions intelligently for the user.</p>');
-				break;
-			case 'development':
-				$('#aboutCircle').html('<h2>Development</h2><p>The development team are the experts that give our marvelous designs a beating heart. The creative goes from static pictures and images to functional, responsive websites, apps or anything else imaginable.</p>');
-				break;
-			case 'marketing':
-				$('#aboutCircle').html('<h2>Marketing</h2><p>We begin with a one-on-one meeting between our strategic planners and the client to analyse the details of their project. They then work with you every step of the way starting at the marketing plan as it moves to a finished project that the client is delighted with.</p>');
-				break;
-			default:
-				break;
-		}
+    $('.icons').on('click', function() {
+        switch (this.id) {
+            case 'audio':
+                $('#aboutCircle').html('<h2>Audio</h2><p>Our seasoned audio pros can handle the most particular auditory demands thrown at them. We have a full sound studio stacked to the ceiling with equipment capable of perfecting each sound down to the decibel.</p>');
+                break;
+            case 'video':
+                $('#aboutCircle').html('<h2>Video</h2><p>Our video experts can find a photogenic in anybody or anything they capture in front of the camera. Our decked out video room including our newest addition, a Canon EOS C100, means we can cast any ideas in its best light.</p>');
+                break;
+            case 'design':
+                $('#aboutCircle').html('<h2>Design</h2><p>We have a stable of brilliant designers eager to be let loose to stretch their creative legs. Their expertise spans any project from print to web. Close consideration is paid to UI and UX design so each page functions intelligently for the user.</p>');
+                break;
+            case 'development':
+                $('#aboutCircle').html('<h2>Development</h2><p>The development team are the experts that give our marvelous designs a beating heart. The creative goes from static pictures and images to functional, responsive websites, apps or anything else imaginable.</p>');
+                break;
+            case 'marketing':
+                $('#aboutCircle').html('<h2>Marketing</h2><p>We begin with a one-on-one meeting between our strategic planners and the client to analyse the details of their project. They then work with you every step of the way starting at the marketing plan as it moves to a finished project that the client is delighted with.</p>');
+                break;
+            default:
+                break;
+        }
     });
 
-	$('#photos img').on('mouseenter', function() {
+    $('#photos img').on('mouseenter', function() {
         $(this).css({
             'cursor': 'pointer',
             'opacity': '0.5',
             'transition': '0.3s ease-in-out',
             '-webkit-transition': '0.3s ease-in-out'
         }).fadeIn('slow', function() {
-            if (this.id == 'aisha') {
-                $(this).attr('src', 'images/team/pixelated/aisha.jpg');
-                $('#biberdorf').css({
-                    'opacity': '1.0'
-                });
-            } else if (this.id == 'keenan') {
-                $(this).attr('src', 'images/team/pixelated/keenan.jpg');
-                $('#boutilier').css({
-                    'opacity': '1.0'
-                });
-            } else if (this.id == 'kevin') {
-                $(this).attr('src', 'images/team/pixelated/kevin.jpg');
-                $('#andrews').css({
-                    'opacity': '1.0'
-                });
-            } else if (this.id == 'lulu') {
-                $(this).attr('src', 'images/team/pixelated/lulu.jpg');
-                $('#davies').css({
-                    'opacity': '1.0'
-                });
-            } else if (this.id == 'michael') {
-                $(this).attr('src', 'images/team/pixelated/michael.jpg');
-                $('#nugent').css({
-                    'opacity': '1.0'
-                });
-            } else if (this.id == 'robb') {
-                $(this).attr('src', 'images/team/pixelated/robb.jpg');
-                $('#over').css({
-                    'opacity': '1.0'
-                });
-            } else if (this.id == 'vanessa') {
-                $(this).attr('src', 'images/team/pixelated/vanessa.jpg');
-                $('#burguete').css({
-                    'opacity': '1.0'
-                });
-            } else if (this.id == 'zach') {
-                $(this).attr('src', 'images/team/pixelated/zach.jpg');
-                $('#falsetto').css({
-                    'opacity': '1.0'
-                });
+            switch (this.id) {
+                case 'aisha':
+                    $(this).attr('src', 'images/team/pixelated/aisha.jpg');
+                    $('#biberdorf').css('opacity', '1.0');
+                    break;
+                case 'keenan':
+                    $(this).attr('src', 'images/team/pixelated/keenan.jpg');
+                    $('#boutilier').css('opacity', '1.0');
+                    break;
+                case 'kevin':
+                    $(this).attr('src', 'images/team/pixelated/kevin.jpg');
+                    $('#andrews').css('opacity', '1.0');
+                    break;
+                case 'lulu':
+                    $(this).attr('src', 'images/team/pixelated/lulu.jpg');
+                    $('#davies').css('opacity', '1.0');
+                    break;
+                case 'michael':
+                    $(this).attr('src', 'images/team/pixelated/michael.jpg');
+                    $('#nugent').css('opacity', '1.0');
+                    break;
+                case 'robb':
+                    $(this).attr('src', 'images/team/pixelated/robb.jpg');
+                    $('#over').css('opacity', '1.0');
+                    break;
+                case 'vanessa':
+                    $(this).attr('src', 'images/team/pixelated/vanessa.jpg');
+                    $('#burguete').css('opacity', '1.0');
+                    break;
+                case 'zach':
+                    $(this).attr('src', 'images/team/pixelated/zach.jpg');
+                    $('#falsetto').css('opacity', '1.0');
+                    break;
+                default:
+                    break;
             }
         });
     });
 
-	$('#photos img').on('mouseout', function() {
+    $('#photos img').on('mouseout', function() {
         $(this).css({
             'cursor': 'pointer',
             'opacity': '1.0',
             'transition': '0.3s ease-in-out',
             '-webkit-transition': '0.3s ease-in-out'
         }).fadeIn('slow', function() {
-            if (this.id == 'aisha') {
-                $(this).attr('src', 'images/team/clear/aisha.jpg');
-                $('#biberdorf').css({
-                    'opacity': '0'
-                });
-            } else if (this.id == 'keenan') {
-                $(this).attr('src', 'images/team/clear/keenan.jpg');
-                $('#boutilier').css({
-                    'opacity': '0'
-                });
-            } else if (this.id == 'kevin') {
-                $(this).attr('src', 'images/team/clear/kevin.jpg');
-                $('#andrews').css({
-                    'opacity': '0'
-                });
-            } else if (this.id == 'lulu') {
-                $(this).attr('src', 'images/team/clear/lulu.jpg');
-                $('#davies').css({
-                    'opacity': '0'
-                });
-            } else if (this.id == 'michael') {
-                $(this).attr('src', 'images/team/clear/michael.jpg');
-                $('#nugent').css({
-                    'opacity': '0'
-                });
-            } else if (this.id == 'robb') {
-                $(this).attr('src', 'images/team/clear/robb.jpg');
-                $('#over').css({
-                    'opacity': '0'
-                });
-            } else if (this.id == 'vanessa') {
-                $(this).attr('src', 'images/team/clear/vanessa.jpg');
-                $('#burguete').css({
-                    'opacity': '0'
-                });
-            } else if (this.id == 'zach') {
-                $(this).attr('src', 'images/team/clear/zach.jpg');
-                $('#falsetto').css({
-                    'opacity': '0'
-                });
+            switch (this.id) {
+                case 'aisha':
+                    $(this).attr('src', 'images/team/clear/aisha.jpg');
+                    $('#biberdorf').css('opacity', '0');
+                    break;
+                case 'keenan':
+                    $(this).attr('src', 'images/team/clear/keenan.jpg');
+                    $('#boutilier').css('opacity', '0');
+                    break;
+                case 'kevin':
+                    $(this).attr('src', 'images/team/clear/kevin.jpg');
+                    $('#andrews').css('opacity', '0');
+                    break;
+                case 'lulu':
+                    $(this).attr('src', 'images/team/clear/lulu.jpg');
+                    $('#davies').css('opacity', '0');
+                    break;
+                case 'michael':
+                    $(this).attr('src', 'images/team/clear/michael.jpg');
+                    $('#nugent').css('opacity', '0');
+                    break;
+                case 'robb':
+                    $(this).attr('src', 'images/team/clear/robb.jpg');
+                    $('#over').css('opacity', '0');
+                    break;
+                case 'vanessa':
+                    $(this).attr('src', 'images/team/clear/vanessa.jpg');
+                    $('#burguete').css('opacity', '0');
+                    break;
+                case 'zach':
+                    $(this).attr('src', 'images/team/clear/zach.jpg');
+                    $('#falsetto').css('opacity', '0');
+                    break;
+                default:
+                    break;
             }
         });
     });

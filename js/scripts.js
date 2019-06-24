@@ -107,18 +107,26 @@ $(function() {
         }
     });
 
-    $('.icons').click(function() {
-        if (this.id == 'audio') {
-            $('#aboutCircle').html('<h2>Audio</h2><p>Our seasoned audio pros can handle the most particular auditory demands thrown at them. We have a full sound studio stacked to the ceiling with equipment capable of perfecting each sound down to the decibel.</p>');
-        } else if (this.id == 'video') {
-            $('#aboutCircle').html('<h2>Video</h2><p>Our video experts can find a photogenic in anybody or anything they capture in front of the camera. Our decked out video room including our newest addition, a Canon EOS C100, means we can cast any ideas in its best light.</p>');
-        } else if (this.id == 'design') {
-            $('#aboutCircle').html('<h2>Design</h2><p>We have a stable of brilliant designers eager to be let loose to stretch their creative legs. Their expertise spans any project from print to web. Close consideration is paid to UI and UX design so each page functions intelligently for the user.</p>');
-        } else if (this.id == 'development') {
-            $('#aboutCircle').html('<h2>Development</h2><p>The development team are the experts that give our marvelous designs a beating heart. The creative goes from static pictures and images to functional, responsive websites, apps or anything else imaginable.</p>');
-        } else if (this.id == 'marketing') {
-            $('#aboutCircle').html('<h2>Marketing</h2><p>We begin with a one-on-one meeting between our strategic planners and the client to analyse the details of their project. They then work with you every step of the way starting at the marketing plan as it moves to a finished project that the client is delighted with.</p>');
-        }
+	$('.icons').on('click', function() {
+		switch (this.id) {
+			case 'audio':
+				$('#aboutCircle').html('<h2>Audio</h2><p>Our seasoned audio pros can handle the most particular auditory demands thrown at them. We have a full sound studio stacked to the ceiling with equipment capable of perfecting each sound down to the decibel.</p>');
+				break;
+			case 'video':
+				$('#aboutCircle').html('<h2>Video</h2><p>Our video experts can find a photogenic in anybody or anything they capture in front of the camera. Our decked out video room including our newest addition, a Canon EOS C100, means we can cast any ideas in its best light.</p>');
+				break;
+			case 'design':
+				$('#aboutCircle').html('<h2>Design</h2><p>We have a stable of brilliant designers eager to be let loose to stretch their creative legs. Their expertise spans any project from print to web. Close consideration is paid to UI and UX design so each page functions intelligently for the user.</p>');
+				break;
+			case 'development':
+				$('#aboutCircle').html('<h2>Development</h2><p>The development team are the experts that give our marvelous designs a beating heart. The creative goes from static pictures and images to functional, responsive websites, apps or anything else imaginable.</p>');
+				break;
+			case 'marketing':
+				$('#aboutCircle').html('<h2>Marketing</h2><p>We begin with a one-on-one meeting between our strategic planners and the client to analyse the details of their project. They then work with you every step of the way starting at the marketing plan as it moves to a finished project that the client is delighted with.</p>');
+				break;
+			default:
+				break;
+		}
     });
 
     $('#photos img').mouseenter(function() {

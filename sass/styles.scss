@@ -102,6 +102,10 @@ body {
     }
 }
 
+#wrapper {
+    overflow-x: hidden;
+}
+
 ul.content li {
     display: block;
     height: 100%;
@@ -203,157 +207,66 @@ a#contact {
     -moz-border-radius: 15px;
 }
 
-#webBubble {
-    cursor: pointer;
-    display: inline-block;
-    border: 3px solid $peach;
-    width: 270px;
-    padding: 10px 50px;
-    border-radius: 0px 0px 0px 15px;
-    -webkit-border-radius: 0px 0px 0px 15px;
-    -moz-border-radius: 0px 0px 0px 15px;
-
-    a {
-        &:link {
-            color: $darkblue;
-            text-decoration: none;
-        }
-
-        &:visited {
-            color: $darkblue;
-        }
-
-        &:hover {
-            color: $teal;
-            transition: 0.3s ease-in-out;
-            -webkit-transition: 0.3s ease-in-out;
-        }
-    }
-
-    &:hover {
-        -webkit-box-shadow: inset 0px 0px 6px $grey;
-        box-shadow: inset 0px 0px 6px $grey;
-        transition: 0.2s ease-in-out;
-        -webkit-transition: 0.2s ease-in-out;
-
-        a {
-            &:link {
-                color: $teal;
-                transition: 0.2s ease-in-out;
-                -webkit-transition: 0.2s ease-in-out;
-            }
-        }
-    }
-}
-
-#audioBubble {
-    cursor: pointer;
-    display: inline-block;
-    border: 3px solid $peach;
-    width: 278px;
-    padding: 10px 50px;
-    border-radius: 0px;
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-
-    a {
-        &:link {
-            color: $darkblue;
-            text-decoration: none;
-        }
-
-        &:visited {
-            color: $darkblue;
-        }
-
-        &:hover {
-            color: $teal;
-            transition: 0.3s ease-in-out;
-            -webkit-transition: 0.3s ease-in-out;
-        }
-    }
-
-    &:hover {
-        -webkit-box-shadow: inset 0px 0px 6px $grey;
-        box-shadow: inset 0px 0px 6px $grey;
-        transition: 0.2s ease-in-out;
-        -webkit-transition: 0.2s ease-in-out;
-
-        a {
-            &:link {
-                color: $teal;
-                transition: 0.2s ease-in-out;
-                -webkit-transition: 0.2s ease-in-out;
-            }
-        }
-    }
-}
-
+#webBubble,
+#audioBubble,
 #videoBubble {
     cursor: pointer;
-    display: inline-block;
-    border: 3px solid $peach;
-    width: 270px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    margin: 5px 2px;
     padding: 10px 50px;
-    border-radius: 0px 0px 15px 0px;
-    -webkit-border-radius: 0px 0px 15px 0px;
-    -moz-border-radius: 0px 0px 15px 0px;
+    transition: 0.2s ease-in-out;
+    -webkit-transition: 0.2s ease-in-out;
 
-    a {
-        &:link {
-            color: $darkblue;
-            text-decoration: none;
-        }
+    a :link,
+    a:visited {
+        color: $darkblue;
+        text-decoration: none;
+    }
 
-        &:visited {
-            color: $darkblue;
-        }
-
-        &:hover {
-            color: $teal;
-            transition: 0.3s ease-in-out;
-            -webkit-transition: 0.3s ease-in-out;
-        }
+    h3 {
+        transition: 0.2s ease-in-out;
+        -webkit-transition: 0.2s ease-in-out;
     }
 
     &:hover {
         -webkit-box-shadow: inset 0px 0px 6px $grey;
         box-shadow: inset 0px 0px 6px $grey;
-        transition: 0.2s ease-in-out;
-        -webkit-transition: 0.2s ease-in-out;
 
-        a {
-            &:link {
-                color: $teal;
-                transition: 0.2s ease-in-out;
-                -webkit-transition: 0.2s ease-in-out;
-            }
+        h3 {
+            color: $teal;
         }
     }
 }
 
-.workExamples {
-    float: left;
-    width: 21%;
-    margin: 20px;
-    font-family: $dense;
-    color: #FFF;
-    font-size: 24px;
-    line-height: 24px;
+#examplesWrapper {
+    width: 85%;
+    margin: auto;
 
-    p {
-        margin-left: 10px;
+    .workExamples {
+        float: left;
+        width: 21%;
+        margin: 20px;
+        font-family: $dense;
+        color: #FFF;
+        font-size: 24px;
+        line-height: 24px;
+
+        p {
+            margin-left: 10px;
+        }
     }
-}
 
-.exampleBubble {
-    width: 150px;
-    height: 110px;
-    margin-bottom: 10px;
-
-    img {
+    .exampleBubble {
         width: 150px;
-        height: auto;
+        height: 110px;
+        margin-bottom: 10px;
+
+        img {
+            width: 150px;
+            height: auto;
+        }
     }
 }
 
@@ -385,7 +298,7 @@ a#contact {
 
     img {
         display: block;
-        margin: 2m auto;
+        margin: 2em auto;
         width: 90%;
     }
 }
@@ -394,12 +307,12 @@ a#contact {
     height: 100%;
     padding: 130px 20px 20px;
     background-color: $red;
-    margin: 1em auto;
+    margin: auto;
 
     #workdisplay {
         width: 470px;
         position: relative;
-        margin: 130px auto;
+        margin: 200px auto;
         clear: both;
     }
 
@@ -545,7 +458,7 @@ a#contact {
 #work {
     width: 100%;
     height: 100%;
-    padding: 120px 20px 20px;
+    padding: 120px 20px;
     background-color: $peach;
 
     img {
@@ -553,9 +466,18 @@ a#contact {
     }
 
     #nav {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+        align-items: stretch;
         border-top: 1px solid $peach;
         background: $peach;
-        display: block;
         margin: auto;
         border-radius: 0px 0px 15px 15px;
         -webkit-border-radius: 0px 0px 15px 15px;
@@ -650,32 +572,51 @@ a#contact {
 #overlay {
     position: fixed;
     top: 0;
+    right: 0;
+    bottom: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+	padding: 50px;
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 100;
 
-    img {
-        float: left;
-        margin: 230px 0 0 90px;
-    }
-
     h3 {
-        float: left;
+		margin-bottom: 0.5em;
         font-family: $archive;
         color: #FFF;
         font-size: 72px;
         text-transform: uppercase;
-        margin: 230px 0 0 30px;
     }
 
-    p {
-        font-family: $dense;
-        font-size: 36px;
-        line-height: 54px;
-        color: #FFF;
-        margin: 290px 0 0 525px;
+    .details {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+
+        img {
+            margin-right: 20px;
+        }
+
+        p {
+            font-family: $dense;
+            font-size: 36px;
+            line-height: 54px;
+            color: #FFF;
+        }
     }
 }
 
@@ -723,59 +664,59 @@ a#contact {
         -moz-border-radius: 15px;
 
         fieldset input {
-                margin-bottom: 10px;
-                padding: 5px 10px;
-                width: 95%;
-                font-size: 30px;
-                display: block;
-                font-family: $dense;
-                color: $darkblue;
-                border-radius: 5px;
-                -webkit-border-radius: 5px;
-                -moz-border-radius: 5px;
-                border: none;
-                background-color: #DDD;
+            margin-bottom: 10px;
+            padding: 5px 10px;
+            width: 95%;
+            font-size: 30px;
+            display: block;
+            font-family: $dense;
+            color: $darkblue;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border: none;
+            background-color: #DDD;
 
-                &:focus {
-                    background-color: #EEE;
-                    outline: none;
-                }
+            &:focus {
+                background-color: #EEE;
+                outline: none;
             }
+        }
 
-            select {
-                color: $darkblue;
+        select {
+            color: $darkblue;
+        }
+
+        textarea {
+            color: $darkblue;
+            font-family: $dense;
+            font-size: 30px;
+            width: 95%;
+            height: auto;
+            background-color: #DDD;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            resize: none;
+
+            &:focus {
+                background-color: #FFF;
+                outline: none;
             }
+        }
 
-            textarea {
-                color: $darkblue;
-                font-family: $dense;
-                font-size: 30px;
-                width: 95%;
-                height: auto;
-                background-color: #DDD;
-                border: none;
-                padding: 5px 10px;
-                border-radius: 5px;
-                -webkit-border-radius: 5px;
-                -moz-border-radius: 5px;
-                resize: none;
-
-                &:focus {
-                    background-color: #FFF;
-                    outline: none;
-                }
-            }
-
-            button {
-                float: right;
-                cursor: pointer;
-                background-color: $darkblue;
-                font-family: $dense;
-                color: #FFF;
-                font-size: 30px;
-                padding: 5px 30px;
-                border: none;
-            }
+        button {
+            float: right;
+            cursor: pointer;
+            background-color: $darkblue;
+            font-family: $dense;
+            color: #FFF;
+            font-size: 30px;
+            padding: 5px 30px;
+            border: none;
+        }
     }
 }
 
@@ -1104,7 +1045,6 @@ html[xmlns] .clearfix {
 
     #webBubble {
         border: none;
-        width: 32.8%;
         padding: 0;
         margin-top: 3px;
         border-radius: 0px 0px 0px 15px;
@@ -1150,7 +1090,6 @@ html[xmlns] .clearfix {
         cursor: pointer;
         display: inline-block;
         border: none;
-        width: 31%;
         padding: 0;
         margin-top: 3px;
 
@@ -1192,7 +1131,6 @@ html[xmlns] .clearfix {
         cursor: pointer;
         display: inline-block;
         border: none;
-        width: 32.95%;
         padding: 0;
         margin-top: 3px;
 

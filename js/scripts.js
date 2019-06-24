@@ -230,25 +230,36 @@ $(function() {
     $('#photos img').on('click', function() {
         var profile = $(this).text;
 
-        if ($(this).attr('id') == 'aisha') {
-            profile = '<p>is a crafty designer who perpetually strives for pixel perfection. She believes that the first idea is never the best. Often she isn’t content until she has made upwards of 40 revisions. With the help of some Pixeltwist coworkers, she is peeled away from the computer screen long enough to enjoy a green tea frappuccino. That moment is fleeting though, as she quickly finds her way back to her computer to start on revision 41.</p>';
-        } else if ($(this).attr('id') == 'keenan') {
-            profile = '<p>enjoys life through the view of a camera lens. Everywhere he goes he sees shot angles, backdrops and set pieces. It’s this half-man, half-camera cyborg that leads the video department at Pixeltwist. When he isn’t in the studio producing amazing video for clients, Keenan enjoys expanding his already expanded movie knowledge.</p>';
-        } else if ($(this).attr('id') == 'kevin') {
-            profile = '<p>refers to himself as the web wizard at Pixeltwist. While it may seem a touch immodest to refer to himself as a wizard, his talent for flawless code cannot be denied. Some say his ability comes from being a direct descendant of an ancient coding god. The reality is that nobody has seen Kevin leave the studio in a long while. It is believed that he naps in the ceiling at night and emerges in the wee hours of the morning to feed his coding compulsions.</p>';
-        } else if ($(this).attr('id') == 'lulu') {
-            profile = '<p>is project-lead at Pixeltwist. She’s plugged in to everything going on through each day. When a client comes looking for our expertise, she’s spearheading the meeting to extract the perfect idea. Her attention to detail extends to the kitchen, where she often brings some of her masterfully-prepared home-cooked food to the office for everyone to enjoy.</p>';
-        } else if ($(this).attr('id') == 'michael') {
-            profile = '<p>is the User Experience Designer in charge of keeping the peace between design and usability. His passion is in walking the fine line between a beautiful design and a smart design. His word is the law with keeping UX beautiful, but above all else, functional. So if any designer hopes to get their work approved, they have to get past Michael first.</p>';
-        } else if ($(this).attr('id') == 'robb') {
-            profile = '<p>is the lead audio guy at Pixeltwist. Much like a dog can pick up sounds that humans can’t, he can pick up minute imperfections in sound that the rest of us mere mortals cannot. During his job interview we had to take his word for it and hire him. Robb’s passion was forged through years of being a musician and music lover.</p>';
-        } else if ($(this).attr('id') == 'vanessa') {
-            profile = '<p>is the savvy web designer at Pixeltwist. She’s the web developer embodiment of a swiss army knife. She can knock out fresh new ideas in photoshop, mock them up to work on the web, then present them to the client all in a days work. But aside from school and years of professional experience, where does she get such ability? The word is her sketchbook was imbued by ancient gypsies granting her mystical web development skill.</p>';
-        } else if ($(this).attr('id') == 'zach') {
-            profile = '<p>is the content manager at Pixeltwist. Wrangling words like a skillful literary cowboy is how he spends his day. But to put it in plain english, he is the lead copywriter and walking, talking dictionary at the studio. The creative part of Zach’s brain grows three sizes when he’s twisting words for clients at Pixeltwist.</p>';
+        switch ($(this).attr('id')) {
+            case 'aisha':
+                profile = 'is a crafty designer who perpetually strives for pixel perfection. She believes that the first idea is never the best. Often she isn’t content until she has made upwards of 40 revisions. With the help of some Pixeltwist coworkers, she is peeled away from the computer screen long enough to enjoy a green tea frappuccino. That moment is fleeting though, as she quickly finds her way back to her computer to start on revision 41.';
+                break;
+            case 'keenan':
+                profile = 'enjoys life through the view of a camera lens. Everywhere he goes he sees shot angles, backdrops and set pieces. It’s this half-man, half-camera cyborg that leads the video department at Pixeltwist. When he isn’t in the studio producing amazing video for clients, Keenan enjoys expanding his already expanded movie knowledge.';
+                break;
+            case 'kevin':
+                profile = 'refers to himself as the web wizard at Pixeltwist. While it may seem a touch immodest to refer to himself as a wizard, his talent for flawless code cannot be denied. Some say his ability comes from being a direct descendant of an ancient coding god. The reality is that nobody has seen Kevin leave the studio in a long while. It is believed that he naps in the ceiling at night and emerges in the wee hours of the morning to feed his coding compulsions.';
+                break;
+            case 'lulu':
+                profile = 'is project-lead at Pixeltwist. She’s plugged in to everything going on through each day. When a client comes looking for our expertise, she’s spearheading the meeting to extract the perfect idea. Her attention to detail extends to the kitchen, where she often brings some of her masterfully-prepared home-cooked food to the office for everyone to enjoy.';
+                break;
+            case 'michael':
+                profile = 'is the User Experience Designer in charge of keeping the peace between design and usability. His passion is in walking the fine line between a beautiful design and a smart design. His word is the law with keeping UX beautiful, but above all else, functional. So if any designer hopes to get their work approved, they have to get past Michael first.';
+                break;
+            case 'robb':
+                profile = 'is the lead audio guy at Pixeltwist. Much like a dog can pick up sounds that humans can’t, he can pick up minute imperfections in sound that the rest of us mere mortals cannot. During his job interview we had to take his word for it and hire him. Robb’s passion was forged through years of being a musician and music lover.';
+                break;
+            case 'vanessa':
+                profile = 'is the savvy web designer at Pixeltwist. She’s the web developer embodiment of a swiss army knife. She can knock out fresh new ideas in photoshop, mock them up to work on the web, then present them to the client all in a days work. But aside from school and years of professional experience, where does she get such ability? The word is her sketchbook was imbued by ancient gypsies granting her mystical web development skill.';
+            case 'zach':
+                profile = 'is the content manager at Pixeltwist. Wrangling words like a skillful literary cowboy is how he spends his day. But to put it in plain english, he is the lead copywriter and walking, talking dictionary at the studio. The creative part of Zach’s brain grows three sizes when he’s twisting words for clients at Pixeltwist.';
+                break;
+            default:
+                break;
         }
 
-        var overlay = jQuery('<div id="overlay">' + '<img src="images/team/clear/' + $(this).attr('id') + '.jpg" alt="' + $(this).attr('id') + '"><h3>' + $(this).attr('value') + '</h3><br><p>' + profile + '</p></div>');
+		var overlay = $('<div id="overlay"><div class="profile"><img src="images/team/clear/' + $(this).attr('id') + '.jpg" alt="' + $(this).attr('value') + '"><div><h3>' + $(this).attr('value') + '</h3><p>' + profile + '</p></div></div></div>');
+
         overlay.appendTo(document.body).show('slow');
 
         if ($(this).length != 0) {

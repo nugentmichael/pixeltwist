@@ -512,43 +512,43 @@ a#contact {
         width: 86%;
         max-width: 1200px;
         padding: 0;
-		
-		.teammate {
-		    position: relative;
-		    width: 25%;
-		    height: auto;
-		    background-color: $purple;
-		    float: left;
-		    overflow: hidden;
 
-		    img {
-				width: 100%;
-				opacity: 1;
-				transition: 0.3s ease-in-out;
-				-webkit-transition: 0.3s ease-in-out;
+        .teammate {
+            position: relative;
+            width: 25%;
+            height: auto;
+            background-color: $purple;
+            float: left;
+            overflow: hidden;
 
-				&:hover {
-					opacity: 0.5;
-					cursor: pointer;
-				}
-		    }
+            img {
+                width: 100%;
+                opacity: 1;
+                transition: 0.3s ease-in-out;
+                -webkit-transition: 0.3s ease-in-out;
 
-		    span {
-		        position: absolute;
-		        bottom: 0;
-		        height: 80px;
-		        background-color: rgba(0, 0, 0, 0.6);
-		        font-family: $archive;
-		        color: #FFF;
-		        font-size: 18px;
-		        line-height: 1.5em;
-		        text-align: center;
-		        z-index: 10;
-		        opacity: 0;
-		        -webkit-transition: all 0.5s ease;
-		        transition: all 0.5s ease;
-		    }
-		}
+                &:hover {
+                    opacity: 0.5;
+                    cursor: pointer;
+                }
+            }
+
+            span {
+                position: absolute;
+                bottom: 0;
+                height: 80px;
+                background-color: rgba(0, 0, 0, 0.6);
+                font-family: $archive;
+                color: #FFF;
+                font-size: 18px;
+                line-height: 1.5em;
+                text-align: center;
+                z-index: 10;
+                opacity: 0;
+                -webkit-transition: all 0.5s ease;
+                transition: all 0.5s ease;
+            }
+        }
     }
 }
 

@@ -151,20 +151,20 @@ $(function() {
 
     $('.workExamples').on('click', function() {
         for (var i = 0; i < portfolio.length; i++) {
-			if ($(this).attr('id') == portfolio[i].id) {
+            if ($(this).attr('id') == portfolio[i].id) {
                 overlay = $('<div id="overlay">\
 				<div>\
 					<h3>' + portfolio[i].name + '</h3>\
 					<div class="details">\
-						<img src="images/' + portfolio[i].id + '.png" alt="' + portfolio[i].name +'">\
+						<img src="images/' + portfolio[i].id + '.png" alt="' + portfolio[i].name + '">\
 							<p>' + portfolio[i].description + '</p>\
 							</div>\
 						</div>\
 					</div>');
             }
-		}
-		
-		$('body').append(overlay);
+        }
+
+        $('body').append(overlay);
 
         if ($(this).length != 0) {
             $(overlay).on('click', function() {
@@ -198,38 +198,38 @@ $(function() {
     });
 
     for (var j = 0; j < staff.length; j++) {
-        $('#team #photos').append('\
-			<div class= "teammate">\
+        (function(j) {
+            $('#team #photos').append('\
+			<div class="teammate">\
 				<span>' + staff[j].name + '<br>' + staff[j].title + '</span>\
-				<img src="' + staff[j].clear + '" alt="' + staff[j].name + '" id="' + staff[j].id + '">\
+				<img src = "' + staff[j].clear + '" id = "' + staff[j].id + '" alt = "' + staff[j].name + '" data-pixel-src="' + staff[j].pixelated + '">\
 			</div>');
-    }
 
-    $('#photos img').on('click', function() {
-		for (var i = 0; i < staff.length; i++) {
-		    if ($(this).attr('id') == staff[i].id) {
-		        overlay = $('<div id="overlay">\
-				<div>\
-					<h3>' + staff[i].name + '</h3>\
-					<div class="details">\
-						<img src="' + staff[i].clear + '" alt="' + staff[i].name + '">\
-							<p>' + staff[i].bio + '</p>\
+            $('#photos img').on('click', function() {
+                if ($(this).attr('id') == staff[j].id) {
+                    overlay = $('<div id="overlay">\
+					<div>\
+						<h3>' + staff[j].name + '</h3>\
+						<div class="details">\
+							<img src="' + staff[j].clear + '" alt="' + staff[j].name + '">\
+								<p>' + staff[j].bio + '</p>\
+								</div>\
 							</div>\
-						</div>\
-					</div>');
-		    }
-		}
+						</div>');
 
-		$('body').append(overlay);
+                    $('body').append(overlay);
 
-        if ($(this).length != 0) {
-            $(overlay).on('click', function() {
-                $(this).hide('slow', function() {
-                    $(this).remove();
-                });
+                    if ($(this).length != 0) {
+                        $(overlay).on('click', function() {
+                            $(this).hide('slow', function() {
+                                $(this).remove();
+                            });
+                        });
+                    }
+                }
             });
-        }
-    });
+        })(j);
+    }
 });
 
 /*----- Google Maps API -----*/

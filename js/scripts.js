@@ -226,6 +226,14 @@ $(function() {
         }
     });
 
+    for (var j = 0; j < staff.length; j++) {
+        $('#team #photos').append('\
+			<div class= "teammate">\
+				<span>' + staff[j].name + '<br>' + staff[j].title + '</span>\
+				<img src="' + staff[j].clear + '" alt="' + staff[j].name + '" id="' + staff[j].id + '">\
+			</div>');
+    }
+
     $('#photos img').on('mouseenter', function() {
         $(this).css({
             'cursor': 'pointer',

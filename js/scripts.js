@@ -150,24 +150,6 @@ $(function() {
         }
     });
 
-    $('.exampleBubble').on('mouseenter', function() {
-        $(this).css({
-            'cursor': 'pointer',
-            'opacity': '0.5',
-            'transition': '0.3s ease-in-out',
-            '-webkit-transition': '0.3s ease-in-out'
-        }).fadeIn('slow');
-    });
-
-    $('.exampleBubble').on('mouseout', function() {
-        $(this).css({
-            'cursor': 'pointer',
-            'opacity': '1.0',
-            'transition': '0.3s ease-in-out',
-            '-webkit-transition': '0.3s ease-in-out'
-        }).fadeIn('slow');
-    });
-
     $('.workExamples').on('click', function() {
         var description = $(this).text;
 

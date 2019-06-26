@@ -151,29 +151,21 @@ $(function() {
     });
 
     $('.workExamples').on('click', function() {
-        var description = $(this).text;
+        var overlay;
 
-        switch ($(this).attr('id')) {
-            case 'backflipStudios':
-                description = 'Backflip Studios is a production company headquartered in Ottawa with popular recent Canada-wide releases. They wanted to promote their most ambitious project yet, which is where we came in.';
-                break;
-            case 'theBluePepperGrill':
-                description = 'With locations across Ontario and looking beyond, The Blue Pepper Grill needed a fresh face to lead it’s growth to western Canada.';
-                break;
-            case 'peacefulPlay':
-                description = 'In order to spread their work on a global scale Peaceful Play had to work hard to break into the crowded not-for-profit sector. We were more than happy to accompany them in Africa to help shoot video for use on their website.';
-                break;
-            case 'mercuryInsurance':
-                description = 'Being the most popular insurance company among young drivers, Mercury Insurance decided to target its audience in a campaign to reduce distracted driving. We knew we just had to help out with this very worthwhile cause.';
-                break;
-            case 'composure':
-                description = 'In one of our most ambitious projects yet, we worked with the creators of the upcoming release, Composure, helping them produce and edit teaser trailers. Along with this, we developed their web presence as well as their marketing plan for the release of Composure.';
-                break;
-            default:
-                break;
+        for (var i = 0; i < portfolio.length; i++) {
+			if ($(this).attr('id') == portfolio[i].id) {
+                overlay = $('<div id="overlay">\
+				<div>\
+					<h3>' + portfolio[i].name + '</h3>\
+					<div class="details">\
+						<img src="images/' + portfolio[i].id + '.png" alt="' + portfolio[i].name +'">\
+							<p>' + portfolio[i].description + '</p>\
+							</div>\
+						</div>\
+					</div>');
+            }
         }
-
-        var overlay = $('<div id="overlay"><div><h3>' + $(this).attr('id') + '</h3>' + '<div class="details"><img src="images/' + $(this).attr('id') + '.png" alt="' + $(this).attr('id') + '"><p>' + description + '</p></div></div></div>');
 
         overlay.appendTo(document.body).show('slow');
 

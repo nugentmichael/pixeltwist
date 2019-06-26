@@ -159,17 +159,14 @@ $(function() {
 
     $('.bubble').on('click', function() {
         switch (this.id) {
-            case 'webBubble':
-                $('#backflipStudios').hide('slow');
-                $('#theBluePepperGrill, #peacefulPlay, #mercuryInsurance, #composure').show('slow');
+			case 'webBubble':
+				$('#examplesWrapper .web').show('slow').siblings().not('#examplesWrapper .web').hide('slow');
                 break;
-            case 'audioBubble':
-                $('#theBluePepperGrill, #peacefulPlay, #mercuryInsurance').hide('slow');
-                $('#backflipStudios, #composure').show('slow');
+			case 'audioBubble':
+				$('#examplesWrapper .audio').show('slow').siblings().not('#examplesWrapper .audio').hide('slow');
                 break;
-            case 'videoBubble':
-                $('#theBluePepperGrill').hide('slow');
-                $('#backflipStudios, #peacefulPlay, #mercuryInsurance, #composure').show('slow');
+			case 'videoBubble':
+				$('#examplesWrapper .video').show('slow').siblings().not('#examplesWrapper .video').hide('slow');
                 break;
             default:
                 break;

@@ -2,6 +2,33 @@
 var overlay;
 
 // JSON Data
+services = [{
+        "id": "audio",
+        "service": "Audio",
+        "description": "Our seasoned audio pros can handle the most particular auditory demands thrown at them. We have a full sound studio stacked to the ceiling with equipment capable of perfecting each sound down to the decibel."
+    },
+    {
+        "id": "video",
+        "service": "Video",
+        "description": "Our video experts can find a photogenic in anybody or anything they capture in front of the camera. Our decked out video room including our newest addition, a Canon EOS C100, means we can cast any ideas in its best light."
+	},
+	{
+	    "id": "design",
+	    "service": "Design",
+	    "description": "We have a stable of brilliant designers eager to be let loose to stretch their creative legs. Their expertise spans any project from print to web. Close consideration is paid to UI and UX design so each page functions intelligently for the user."
+	},
+	{
+	    "id": "development",
+	    "service": "Development",
+	    "description": "The development team are the experts that give our marvelous designs a beating heart. The creative goes from static pictures and images to functional, responsive websites, apps or anything else imaginable."
+	},
+	{
+	    "id": "marketing",
+	    "service": "Marketing",
+	    "description": "We begin with a one-on-one meeting between our strategic planners and the client to analyse the details of their project. They then work with you every step of the way starting at the marketing plan as it moves to a finished project that the client is delighted with."
+	}
+];
+
 portfolio = [{
         "id": "backflipStudios",
         "name": "Backflip Studios",

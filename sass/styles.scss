@@ -456,7 +456,7 @@ a#contact {
 #work {
     width: 100%;
     height: 100%;
-    padding: 120px 20px;
+    padding: 120px 0;
     background-color: $peach;
 
     img {
@@ -502,7 +502,7 @@ a#contact {
 #team {
     width: 100%;
     height: 100%;
-    padding: 120px 20px 20px;
+    padding: 120px 0 20px;
     background-color: $purple;
 
     #photos {
@@ -629,7 +629,7 @@ a#contact {
 
 #blog {
     height: 100%;
-    padding: 120px 20px 20px;
+    padding: 120px 0 20px;
     background-color: $teal;
 
     h4 {
@@ -649,7 +649,7 @@ a#contact {
 
 #contact {
     width: 100%;
-    padding: 120px 20px;
+    padding: 120px 0;
     background-color: $peach;
 
     #map_canvas {
@@ -774,7 +774,7 @@ html[xmlns] .clearfix {
 }
 
 /* iPads (portrait) ----------- */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 768px) {
 
     #navigation {
         border-bottom: 0;
@@ -855,13 +855,13 @@ html[xmlns] .clearfix {
             font-size: 55px;
             text-align: left;
         }
-    }
+	}
 
     #aboutBubble,
     #workBubble,
     #teamBubble,
     #contactBubble {
-        width: 90%;
+        width: 80%;
     }
 
     #footer {
@@ -871,7 +871,14 @@ html[xmlns] .clearfix {
             display: inline-block;
             padding: 38px 4px;
         }
-    }
+	}
+	
+	#examplesWrapper .workExamples {
+		float: none;
+		margin: 20px auto;
+		width: 100%;
+		text-align: center;
+	}
 
     #team {
         #photos {
@@ -1189,7 +1196,6 @@ html[xmlns] .clearfix {
 
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width : 335px) {
-
     /* Styles */
     #navigation {
         a#pull {

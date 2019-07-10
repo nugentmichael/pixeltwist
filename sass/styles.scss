@@ -228,7 +228,8 @@ a#contact {
                 -webkit-transition: 0.2s ease-in-out;
             }
 
-            &.active, &:hover {
+            &.active,
+            &:hover {
                 -webkit-box-shadow: inset 0px 0px 6px $grey;
                 box-shadow: inset 0px 0px 6px $grey;
 
@@ -652,77 +653,90 @@ a#contact {
     padding: 120px 0;
     background-color: $peach;
 
-    #map_canvas {
-        float: left;
-        width: 50%;
-        height: 400px;
-        margin: 25px 0 0 0px;
-    }
+    #contact-info {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        margin: auto;
+        width: 90%;
 
-    form {
-        float: left;
-        width: 40%;
-        margin: 25px 0 0 10px;
-        padding: 20px;
-        background-color: #FFF;
-        border-radius: 15px;
-        -webkit-border-radius: 15px;
-        -moz-border-radius: 15px;
+        #map_canvas {
+            -webkit-box-flex: 1;
+            -ms-flex: 1 0 50%;
+            flex: 1 0 50%;
+            min-height: 400px;
+            margin-top: 25px;
+        }
 
-        fieldset input {
-            margin-bottom: 10px;
-            padding: 5px 10px;
-            width: 95%;
-            font-size: 30px;
-            display: block;
-            font-family: $dense;
-            color: $darkblue;
-            border-radius: 5px;
-            -webkit-border-radius: 5px;
-            -moz-border-radius: 5px;
-            border: none;
-            background-color: #DDD;
+        form {
+            -webkit-box-flex: 1;
+            -ms-flex: 1 0 50%;
+            flex: 1 0 50%;
+            margin: 25px 0 0 10px;
+            padding: 20px;
+            background-color: #FFF;
+            border-radius: 15px;
+            -webkit-border-radius: 15px;
+            -moz-border-radius: 15px;
 
-            &:focus {
-                background-color: #EEE;
-                outline: none;
+            fieldset input {
+                margin-bottom: 10px;
+                padding: 5px 10px;
+                width: 95%;
+                font-size: 30px;
+                display: block;
+                font-family: $dense;
+                color: $darkblue;
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                border: none;
+                background-color: #DDD;
+
+                &:focus {
+                    background-color: #EEE;
+                    outline: none;
+                }
             }
-        }
 
-        select {
-            color: $darkblue;
-        }
-
-        textarea {
-            color: $darkblue;
-            font-family: $dense;
-            font-size: 30px;
-            width: 95%;
-            height: auto;
-            background-color: #DDD;
-            border: none;
-            padding: 5px 10px;
-            border-radius: 5px;
-            -webkit-border-radius: 5px;
-            -moz-border-radius: 5px;
-            resize: none;
-
-            &:focus {
-                background-color: #FFF;
-                outline: none;
+            select {
+                color: $darkblue;
             }
-        }
 
-        button {
-            float: right;
-            margin: 20px 0;
-            padding: 5px 30px;
-            cursor: pointer;
-            background-color: $darkblue;
-            font-family: $dense;
-            color: #FFF;
-            font-size: 30px;
-            border: none;
+            textarea {
+                color: $darkblue;
+                font-family: $dense;
+                font-size: 30px;
+                width: 95%;
+                height: auto;
+                background-color: #DDD;
+                border: none;
+                padding: 5px 10px;
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                resize: none;
+
+                &:focus {
+                    background-color: #FFF;
+                    outline: none;
+                }
+            }
+
+            button {
+                float: right;
+                margin: 20px 0;
+                padding: 5px 30px;
+                cursor: pointer;
+                background-color: $darkblue;
+                font-family: $dense;
+                color: #FFF;
+                font-size: 30px;
+                border: none;
+            }
         }
     }
 }
@@ -771,6 +785,16 @@ html[xmlns] .clearfix {
 
 * html .clearfix {
     height: 1%;
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (max-width: 1024px) {
+    #examplesWrapper .workExamples {
+        float: none;
+        margin: 20px auto;
+        width: 100%;
+        text-align: center;
+    }
 }
 
 /* iPads (portrait) ----------- */
@@ -837,6 +861,22 @@ html[xmlns] .clearfix {
         }
     }
 
+    section#hero {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
     .bubble {
         h3 {
             font-size: 24px;
@@ -854,7 +894,7 @@ html[xmlns] .clearfix {
             font-size: 55px;
             text-align: left;
         }
-	}
+    }
 
     #aboutBubble,
     #workBubble,
@@ -870,14 +910,7 @@ html[xmlns] .clearfix {
             display: inline-block;
             padding: 38px 4px;
         }
-	}
-	
-	#examplesWrapper .workExamples {
-		float: none;
-		margin: 20px auto;
-		width: 100%;
-		text-align: center;
-	}
+    }
 
     #team {
         #photos {
@@ -892,30 +925,34 @@ html[xmlns] .clearfix {
 
             }
         }
-	}
+    }
 
-	#overlay {
-		h3 {
-			margin-top: 100px;
-			text-align: center;
-		}
+    #overlay {
+        h3 {
+            margin-top: 100px;
+            text-align: center;
+        }
 
-		.details {
-			flex-direction: column;
-		}
-	}
-	
-	#contact {
-		#map_canvas {
-			float: none;
-			width: 100%;
-		}
+        .details {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+        }
+    }
 
-		form {
-			float: none;
-			margin: 50px auto 0;
-		}
-	}
+    #contact {
+        #contact-info {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+        }
+
+        form {
+            width: auto;
+        }
+    }
 }
 
 /* Smartphones (landscape) ----------- */
@@ -1076,133 +1113,56 @@ html[xmlns] .clearfix {
     #workBubble {
         margin-bottom: 0;
         border-radius: 15px;
-    }
 
-    #webBubble {
-        border: none;
-        padding: 0;
-        margin-top: 3px;
-        border-radius: 0px 0px 0px 15px;
-        -webkit-border-radius: 0px 0px 0px 15px;
-        -moz-border-radius: 0px 0px 0px 15px;
+        #nav {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
 
-        a {
+            .bubble {
+                border: none;
+                margin-top: 3px;
+                border-radius: 15px;
+                -webkit-border-radius: 15px;
+                -moz-border-radius: 15px;
 
-            &:link {
-                color: $darkblue;
-                text-decoration: none;
-            }
+                a {
 
-            &:visited {
-                color: $darkblue;
-            }
+                    &:link {
+                        color: $darkblue;
+                        text-decoration: none;
+                    }
 
-            &:hover {
-                color: $teal;
-                transition: 0.3s ease-in-out;
-                -webkit-transition: 0.3s ease-in-out;
-            }
+                    &:visited {
+                        color: $darkblue;
+                    }
 
-        }
+                    &:hover {
+                        color: $teal;
+                        transition: 0.3s ease-in-out;
+                        -webkit-transition: 0.3s ease-in-out;
+                    }
 
-        &:hover {
-            -webkit-box-shadow: inset 0px 0px 6px $grey;
-            box-shadow: inset 0px 0px 6px $grey;
-            transition: 0.2s ease-in-out;
-            -webkit-transition: 0.2s ease-in-out;
+                }
 
-            a {
-                &:link {
-                    color: $teal;
+                &:hover {
+                    -webkit-box-shadow: inset 0px 0px 6px $grey;
+                    box-shadow: inset 0px 0px 6px $grey;
                     transition: 0.2s ease-in-out;
                     -webkit-transition: 0.2s ease-in-out;
+
+                    a {
+                        &:link {
+                            color: $teal;
+                            transition: 0.2s ease-in-out;
+                            -webkit-transition: 0.2s ease-in-out;
+                        }
+                    }
                 }
             }
         }
     }
-
-    #audioBubble {
-        cursor: pointer;
-        display: inline-block;
-        border: none;
-        padding: 0;
-        margin-top: 3px;
-
-        a {
-            &:link {
-                color: $darkblue;
-                text-decoration: none;
-            }
-
-            &:visited {
-                color: $darkblue;
-            }
-
-            &:hover {
-                color: $teal;
-                transition: 0.3s ease-in-out;
-                -webkit-transition: 0.3s ease-in-out;
-            }
-
-        }
-
-        &:hover {
-            -webkit-box-shadow: inset 0px 0px 6px $grey;
-            box-shadow: inset 0px 0px 6px $grey;
-            transition: 0.2s ease-in-out;
-            -webkit-transition: 0.2s ease-in-out;
-
-            a {
-                &:link {
-                    color: $teal;
-                    transition: 0.2s ease-in-out;
-                    -webkit-transition: 0.2s ease-in-out;
-                }
-            }
-        }
-    }
-
-    #videoBubble {
-        cursor: pointer;
-        display: inline-block;
-        border: none;
-        padding: 0;
-        margin-top: 3px;
-
-        a {
-            &:link {
-                color: $darkblue;
-                text-decoration: none;
-            }
-
-            &:visited {
-                color: $darkblue;
-            }
-
-            &:hover {
-                color: $teal;
-                transition: 0.3s ease-in-out;
-                -webkit-transition: 0.3s ease-in-out;
-            }
-        }
-
-        &:hover {
-            -webkit-box-shadow: inset 0px 0px 6px $grey;
-            box-shadow: inset 0px 0px 6px $grey;
-            transition: 0.2s ease-in-out;
-            -webkit-transition: 0.2s ease-in-out;
-
-            a {
-                &:link {
-                    color: $teal;
-                    transition: 0.2s ease-in-out;
-                    -webkit-transition: 0.2s ease-in-out;
-                }
-            }
-        }
-    }
-
-
 
     .workExamples {
         float: left;
@@ -1217,6 +1177,7 @@ html[xmlns] .clearfix {
 
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width : 335px) {
+
     /* Styles */
     #navigation {
         a#pull {

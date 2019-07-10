@@ -827,11 +827,11 @@ html[xmlns] .clearfix {
 
 /* iPads (portrait) ----------- */
 @media only screen and (max-width: 768px) {
-  /* line 779, ../sass/styles.scss */
+  /* line 778, ../sass/styles.scss */
   #navigation {
     border-bottom: 0;
   }
-  /* line 782, ../sass/styles.scss */
+  /* line 781, ../sass/styles.scss */
   #navigation ul {
     display: none;
     height: 25px;
@@ -840,34 +840,34 @@ html[xmlns] .clearfix {
     right: 30px;
     text-align: left;
   }
-  /* line 791, ../sass/styles.scss */
+  /* line 790, ../sass/styles.scss */
   #navigation ul li {
     background-color: #174A59;
     padding: 3px 0 3px 10px;
   }
-  /* line 795, ../sass/styles.scss */
+  /* line 794, ../sass/styles.scss */
   #navigation ul li:hover {
     background-color: #7DB6B0;
   }
-  /* line 800, ../sass/styles.scss */
+  /* line 799, ../sass/styles.scss */
   #navigation a {
     color: #FFF;
   }
-  /* line 803, ../sass/styles.scss */
+  /* line 802, ../sass/styles.scss */
   #navigation a:link {
     color: #FFF;
   }
-  /* line 807, ../sass/styles.scss */
+  /* line 806, ../sass/styles.scss */
   #navigation a:visited {
     color: #FFF;
   }
-  /* line 812, ../sass/styles.scss */
+  /* line 811, ../sass/styles.scss */
   #navigation a#pull {
     display: block;
     margin-right: 10px;
     float: right;
   }
-  /* line 818, ../sass/styles.scss */
+  /* line 817, ../sass/styles.scss */
   #navigation a#pull:after {
     content: "";
     background: url("../images/nav-icon.png") no-repeat center;
@@ -879,36 +879,36 @@ html[xmlns] .clearfix {
     right: 30px;
     top: 10px;
   }
-  /* line 830, ../sass/styles.scss */
+  /* line 829, ../sass/styles.scss */
   #navigation li {
     display: block;
     float: none;
     width: 140px;
   }
-  /* line 836, ../sass/styles.scss */
+  /* line 835, ../sass/styles.scss */
   #navigation li a {
     border-bottom: 1px;
   }
 
-  /* line 842, ../sass/styles.scss */
+  /* line 841, ../sass/styles.scss */
   .bubble h3 {
     font-size: 24px;
     width: 80%;
     margin: 0 auto;
   }
-  /* line 848, ../sass/styles.scss */
+  /* line 847, ../sass/styles.scss */
   .bubble .slides h3 {
     width: 86%;
     padding: 15px 0% 15px;
     text-align: left;
   }
-  /* line 854, ../sass/styles.scss */
+  /* line 853, ../sass/styles.scss */
   .bubble .slides li:first-child h3 {
     font-size: 55px;
     text-align: left;
   }
 
-  /* line 860, ../sass/styles.scss */
+  /* line 859, ../sass/styles.scss */
   #aboutBubble,
   #workBubble,
   #teamBubble,
@@ -916,17 +916,17 @@ html[xmlns] .clearfix {
     width: 80%;
   }
 
-  /* line 867, ../sass/styles.scss */
+  /* line 866, ../sass/styles.scss */
   #footer {
     font-size: 22px;
   }
-  /* line 870, ../sass/styles.scss */
+  /* line 869, ../sass/styles.scss */
   #footer p {
     display: inline-block;
     padding: 38px 4px;
   }
 
-  /* line 876, ../sass/styles.scss */
+  /* line 875, ../sass/styles.scss */
   #examplesWrapper .workExamples {
     float: none;
     margin: 20px auto;
@@ -934,52 +934,73 @@ html[xmlns] .clearfix {
     text-align: center;
   }
 
-  /* line 884, ../sass/styles.scss */
+  /* line 883, ../sass/styles.scss */
   #team #photos {
     width: 80%;
   }
-  /* line 887, ../sass/styles.scss */
+  /* line 886, ../sass/styles.scss */
   #team #photos .teammate {
     width: 50%;
   }
-  /* line 890, ../sass/styles.scss */
+  /* line 889, ../sass/styles.scss */
   #team #photos .teammate span {
     width: 50%;
+  }
+
+  /* line 898, ../sass/styles.scss */
+  #overlay h3 {
+    margin-top: 100px;
+    text-align: center;
+  }
+  /* line 903, ../sass/styles.scss */
+  #overlay .details {
+    flex-direction: column;
+  }
+
+  /* line 909, ../sass/styles.scss */
+  #contact #map_canvas {
+    float: none;
+    width: 100%;
+  }
+  /* line 914, ../sass/styles.scss */
+  #contact form {
+    float: none;
+    margin: 50px auto 0;
   }
 }
 /* Smartphones (landscape) ----------- */
 @media only screen and (max-width: 480px) {
-  /* line 903, ../sass/styles.scss */
+  /* line 924, ../sass/styles.scss */
   #contact #map_canvas {
     display: none;
   }
-  /* line 907, ../sass/styles.scss */
+  /* line 928, ../sass/styles.scss */
   #contact form {
     width: 80%;
     margin: 0 auto;
     float: none;
   }
-  /* line 912, ../sass/styles.scss */
+  /* line 933, ../sass/styles.scss */
   #contact form fieldset input {
     padding: 1px 10px;
     width: 95%;
   }
 
-  /* line 919, ../sass/styles.scss */
+  /* line 940, ../sass/styles.scss */
   #about {
     height: 100%;
     padding: 120px 20px 20px;
     background-color: #E46350;
     margin: 0 auto;
   }
-  /* line 925, ../sass/styles.scss */
+  /* line 946, ../sass/styles.scss */
   #about #workdisplay {
     width: 100%;
     position: relative;
     margin: 130px auto;
     clear: both;
   }
-  /* line 932, ../sass/styles.scss */
+  /* line 953, ../sass/styles.scss */
   #about #aboutCircle {
     position: relative;
     display: block;
@@ -995,7 +1016,7 @@ html[xmlns] .clearfix {
     -webkit-box-shadow: 3px 3px 7px #323232;
     -moz-box-shadow: 3px 3px 7px #323232;
   }
-  /* line 948, ../sass/styles.scss */
+  /* line 969, ../sass/styles.scss */
   #about h2 {
     font-family: "denseregular", sans-serif;
     font-weight: bold;
@@ -1003,7 +1024,7 @@ html[xmlns] .clearfix {
     font-size: 72px;
     margin: 15px 0px 20px 20px;
   }
-  /* line 956, ../sass/styles.scss */
+  /* line 977, ../sass/styles.scss */
   #about p {
     margin-left: 20px;
     font-family: "denseregular", sans-serif;
@@ -1011,14 +1032,14 @@ html[xmlns] .clearfix {
     font-weight: normal;
     color: #174A59;
   }
-  /* line 964, ../sass/styles.scss */
+  /* line 985, ../sass/styles.scss */
   #about #jobs {
     position: absolute;
     margin: 0 auto;
     width: 100%;
     margin-top: -110px;
   }
-  /* line 971, ../sass/styles.scss */
+  /* line 992, ../sass/styles.scss */
   #about .icons {
     width: 110px;
     height: 110px;
@@ -1028,7 +1049,7 @@ html[xmlns] .clearfix {
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
   }
-  /* line 981, ../sass/styles.scss */
+  /* line 1002, ../sass/styles.scss */
   #about #jobs li {
     margin: 0;
     padding: 0;
@@ -1037,7 +1058,7 @@ html[xmlns] .clearfix {
     width: 31%;
     margin-left: -11%;
   }
-  /* line 990, ../sass/styles.scss */
+  /* line 1011, ../sass/styles.scss */
   #about #audio {
     cursor: pointer;
     background-position: -7px -112px;
@@ -1047,7 +1068,7 @@ html[xmlns] .clearfix {
     top: 0px;
     z-index: 999;
   }
-  /* line 1000, ../sass/styles.scss */
+  /* line 1021, ../sass/styles.scss */
   #about #video {
     cursor: pointer;
     background-position: -120px -112px;
@@ -1057,7 +1078,7 @@ html[xmlns] .clearfix {
     left: 0px;
     z-index: 999;
   }
-  /* line 1010, ../sass/styles.scss */
+  /* line 1031, ../sass/styles.scss */
   #about #design {
     cursor: pointer;
     background-position: -233px -112px;
@@ -1067,7 +1088,7 @@ html[xmlns] .clearfix {
     left: 0px;
     z-index: 999;
   }
-  /* line 1020, ../sass/styles.scss */
+  /* line 1041, ../sass/styles.scss */
   #about #development {
     cursor: pointer;
     background-position: -346px -112px;
@@ -1077,7 +1098,7 @@ html[xmlns] .clearfix {
     left: 0px;
     z-index: 999;
   }
-  /* line 1030, ../sass/styles.scss */
+  /* line 1051, ../sass/styles.scss */
   #about #marketing {
     cursor: pointer;
     background-position: -459px -112px;
@@ -1088,7 +1109,7 @@ html[xmlns] .clearfix {
     z-index: 999;
   }
 
-  /* line 1043, ../sass/styles.scss */
+  /* line 1064, ../sass/styles.scss */
   #team .teammate span {
     height: 40px;
     margin-top: 120px;
@@ -1098,13 +1119,13 @@ html[xmlns] .clearfix {
     line-height: 1.2em;
   }
 
-  /* line 1055, ../sass/styles.scss */
+  /* line 1076, ../sass/styles.scss */
   #workBubble {
     margin-bottom: 0;
     border-radius: 15px;
   }
 
-  /* line 1060, ../sass/styles.scss */
+  /* line 1081, ../sass/styles.scss */
   #webBubble {
     border: none;
     padding: 0;
@@ -1113,36 +1134,36 @@ html[xmlns] .clearfix {
     -webkit-border-radius: 0px 0px 0px 15px;
     -moz-border-radius: 0px 0px 0px 15px;
   }
-  /* line 1070, ../sass/styles.scss */
+  /* line 1091, ../sass/styles.scss */
   #webBubble a:link {
     color: #174A59;
     text-decoration: none;
   }
-  /* line 1075, ../sass/styles.scss */
+  /* line 1096, ../sass/styles.scss */
   #webBubble a:visited {
     color: #174A59;
   }
-  /* line 1079, ../sass/styles.scss */
+  /* line 1100, ../sass/styles.scss */
   #webBubble a:hover {
     color: #7DB6B0;
     transition: 0.3s ease-in-out;
     -webkit-transition: 0.3s ease-in-out;
   }
-  /* line 1087, ../sass/styles.scss */
+  /* line 1108, ../sass/styles.scss */
   #webBubble:hover {
     -webkit-box-shadow: inset 0px 0px 6px #323232;
     box-shadow: inset 0px 0px 6px #323232;
     transition: 0.2s ease-in-out;
     -webkit-transition: 0.2s ease-in-out;
   }
-  /* line 1094, ../sass/styles.scss */
+  /* line 1115, ../sass/styles.scss */
   #webBubble:hover a:link {
     color: #7DB6B0;
     transition: 0.2s ease-in-out;
     -webkit-transition: 0.2s ease-in-out;
   }
 
-  /* line 1103, ../sass/styles.scss */
+  /* line 1124, ../sass/styles.scss */
   #audioBubble {
     cursor: pointer;
     display: inline-block;
@@ -1150,36 +1171,36 @@ html[xmlns] .clearfix {
     padding: 0;
     margin-top: 3px;
   }
-  /* line 1111, ../sass/styles.scss */
+  /* line 1132, ../sass/styles.scss */
   #audioBubble a:link {
     color: #174A59;
     text-decoration: none;
   }
-  /* line 1116, ../sass/styles.scss */
+  /* line 1137, ../sass/styles.scss */
   #audioBubble a:visited {
     color: #174A59;
   }
-  /* line 1120, ../sass/styles.scss */
+  /* line 1141, ../sass/styles.scss */
   #audioBubble a:hover {
     color: #7DB6B0;
     transition: 0.3s ease-in-out;
     -webkit-transition: 0.3s ease-in-out;
   }
-  /* line 1128, ../sass/styles.scss */
+  /* line 1149, ../sass/styles.scss */
   #audioBubble:hover {
     -webkit-box-shadow: inset 0px 0px 6px #323232;
     box-shadow: inset 0px 0px 6px #323232;
     transition: 0.2s ease-in-out;
     -webkit-transition: 0.2s ease-in-out;
   }
-  /* line 1135, ../sass/styles.scss */
+  /* line 1156, ../sass/styles.scss */
   #audioBubble:hover a:link {
     color: #7DB6B0;
     transition: 0.2s ease-in-out;
     -webkit-transition: 0.2s ease-in-out;
   }
 
-  /* line 1144, ../sass/styles.scss */
+  /* line 1165, ../sass/styles.scss */
   #videoBubble {
     cursor: pointer;
     display: inline-block;
@@ -1187,43 +1208,43 @@ html[xmlns] .clearfix {
     padding: 0;
     margin-top: 3px;
   }
-  /* line 1152, ../sass/styles.scss */
+  /* line 1173, ../sass/styles.scss */
   #videoBubble a:link {
     color: #174A59;
     text-decoration: none;
   }
-  /* line 1157, ../sass/styles.scss */
+  /* line 1178, ../sass/styles.scss */
   #videoBubble a:visited {
     color: #174A59;
   }
-  /* line 1161, ../sass/styles.scss */
+  /* line 1182, ../sass/styles.scss */
   #videoBubble a:hover {
     color: #7DB6B0;
     transition: 0.3s ease-in-out;
     -webkit-transition: 0.3s ease-in-out;
   }
-  /* line 1168, ../sass/styles.scss */
+  /* line 1189, ../sass/styles.scss */
   #videoBubble:hover {
     -webkit-box-shadow: inset 0px 0px 6px #323232;
     box-shadow: inset 0px 0px 6px #323232;
     transition: 0.2s ease-in-out;
     -webkit-transition: 0.2s ease-in-out;
   }
-  /* line 1175, ../sass/styles.scss */
+  /* line 1196, ../sass/styles.scss */
   #videoBubble:hover a:link {
     color: #7DB6B0;
     transition: 0.2s ease-in-out;
     -webkit-transition: 0.2s ease-in-out;
   }
 
-  /* line 1186, ../sass/styles.scss */
+  /* line 1207, ../sass/styles.scss */
   .workExamples {
     float: left;
     width: 80%;
     margin-left: 15px;
   }
 
-  /* line 1192, ../sass/styles.scss */
+  /* line 1213, ../sass/styles.scss */
   .exampleBubble {
     min-height: 200px;
   }
@@ -1231,12 +1252,12 @@ html[xmlns] .clearfix {
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width: 335px) {
   /* Styles */
-  /* line 1201, ../sass/styles.scss */
+  /* line 1222, ../sass/styles.scss */
   #navigation a#pull {
     margin-top: -60px;
   }
 
-  /* line 1206, ../sass/styles.scss */
+  /* line 1227, ../sass/styles.scss */
   .bubble .slides h3 {
     text-align: left;
     font-size: 14px;

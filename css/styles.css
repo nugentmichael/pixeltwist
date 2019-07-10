@@ -247,11 +247,8 @@ a#contact {
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
 }
-
 /* line 210, ../sass/styles.scss */
-#webBubble,
-#audioBubble,
-#videoBubble {
+#workBubble #nav .bubble {
   cursor: pointer;
   -webkit-box-flex: 1;
   -ms-flex: 1;
@@ -261,34 +258,24 @@ a#contact {
   transition: 0.2s ease-in-out;
   -webkit-transition: 0.2s ease-in-out;
 }
-/* line 222, ../sass/styles.scss */
-#webBubble a :link,
-#webBubble a:visited,
-#audioBubble a :link,
-#audioBubble a:visited,
-#videoBubble a :link,
-#videoBubble a:visited {
+/* line 220, ../sass/styles.scss */
+#workBubble #nav .bubble a :link,
+#workBubble #nav .bubble a:visited {
   color: #174A59;
   text-decoration: none;
 }
-/* line 228, ../sass/styles.scss */
-#webBubble h3,
-#audioBubble h3,
-#videoBubble h3 {
+/* line 226, ../sass/styles.scss */
+#workBubble #nav .bubble h3 {
   transition: 0.2s ease-in-out;
   -webkit-transition: 0.2s ease-in-out;
 }
-/* line 233, ../sass/styles.scss */
-#webBubble:hover,
-#audioBubble:hover,
-#videoBubble:hover {
+/* line 231, ../sass/styles.scss */
+#workBubble #nav .bubble.active, #workBubble #nav .bubble:hover {
   -webkit-box-shadow: inset 0px 0px 6px #323232;
   box-shadow: inset 0px 0px 6px #323232;
 }
-/* line 237, ../sass/styles.scss */
-#webBubble:hover h3,
-#audioBubble:hover h3,
-#videoBubble:hover h3 {
+/* line 235, ../sass/styles.scss */
+#workBubble #nav .bubble.active h3, #workBubble #nav .bubble:hover h3 {
   color: #7DB6B0;
 }
 
@@ -1221,14 +1208,14 @@ html[xmlns] .clearfix {
     -webkit-transition: 0.2s ease-in-out;
   }
 
-  /* line 1177, ../sass/styles.scss */
+  /* line 1179, ../sass/styles.scss */
   .workExamples {
     float: left;
     width: 80%;
     margin-left: 15px;
   }
 
-  /* line 1183, ../sass/styles.scss */
+  /* line 1185, ../sass/styles.scss */
   .exampleBubble {
     min-height: 200px;
   }
@@ -1236,12 +1223,12 @@ html[xmlns] .clearfix {
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width: 335px) {
   /* Styles */
-  /* line 1193, ../sass/styles.scss */
+  /* line 1195, ../sass/styles.scss */
   #navigation a#pull {
     margin-top: -60px;
   }
 
-  /* line 1198, ../sass/styles.scss */
+  /* line 1200, ../sass/styles.scss */
   .bubble .slides h3 {
     text-align: left;
     font-size: 14px;

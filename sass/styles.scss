@@ -205,37 +205,37 @@ a#contact {
     border-radius: 15px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
-}
 
-#webBubble,
-#audioBubble,
-#videoBubble {
-    cursor: pointer;
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    margin: 5px 2px;
-    padding: 10px 50px;
-    transition: 0.2s ease-in-out;
-    -webkit-transition: 0.2s ease-in-out;
+    #nav {
+        .bubble {
+            cursor: pointer;
+            -webkit-box-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+            margin: 5px 2px;
+            padding: 10px 50px;
+            transition: 0.2s ease-in-out;
+            -webkit-transition: 0.2s ease-in-out;
 
-    a :link,
-    a:visited {
-        color: $darkblue;
-        text-decoration: none;
-    }
+            a :link,
+            a:visited {
+                color: $darkblue;
+                text-decoration: none;
+            }
 
-    h3 {
-        transition: 0.2s ease-in-out;
-        -webkit-transition: 0.2s ease-in-out;
-    }
+            h3 {
+                transition: 0.2s ease-in-out;
+                -webkit-transition: 0.2s ease-in-out;
+            }
 
-    &:hover {
-        -webkit-box-shadow: inset 0px 0px 6px $grey;
-        box-shadow: inset 0px 0px 6px $grey;
+            &.active, &:hover {
+                -webkit-box-shadow: inset 0px 0px 6px $grey;
+                box-shadow: inset 0px 0px 6px $grey;
 
-        h3 {
-            color: $teal;
+                h3 {
+                    color: $teal;
+                }
+            }
         }
     }
 }
@@ -1173,6 +1173,8 @@ html[xmlns] .clearfix {
             }
         }
     }
+
+
 
     .workExamples {
         float: left;

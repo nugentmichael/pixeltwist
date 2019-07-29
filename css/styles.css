@@ -568,22 +568,28 @@ a#contact {
   overflow: hidden;
 }
 /* line 525, ../sass/styles.scss */
+#team #photos .teammate:hover span {
+  opacity: 1;
+}
+/* line 529, ../sass/styles.scss */
 #team #photos .teammate img {
   width: 100%;
   opacity: 1;
   transition: 0.3s ease-in-out;
   -webkit-transition: 0.3s ease-in-out;
 }
-/* line 531, ../sass/styles.scss */
+/* line 535, ../sass/styles.scss */
 #team #photos .teammate img:hover {
   opacity: 0.5;
   cursor: pointer;
 }
-/* line 537, ../sass/styles.scss */
+/* line 541, ../sass/styles.scss */
 #team #photos .teammate span {
   position: absolute;
+  right: 0;
   bottom: 0;
-  height: 80px;
+  left: 0;
+  padding: 20px;
   background-color: rgba(0, 0, 0, 0.6);
   font-family: "archiveregular", sans-serif;
   color: #FFF;
@@ -596,7 +602,7 @@ a#contact {
   transition: all 0.5s ease;
 }
 
-/* line 556, ../sass/styles.scss */
+/* line 562, ../sass/styles.scss */
 #overlay {
   position: fixed;
   top: 0;
@@ -617,7 +623,7 @@ a#contact {
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 100;
 }
-/* line 576, ../sass/styles.scss */
+/* line 582, ../sass/styles.scss */
 #overlay h3 {
   margin-bottom: 0.5em;
   font-family: "archiveregular", sans-serif;
@@ -625,7 +631,7 @@ a#contact {
   font-size: 72px;
   text-transform: uppercase;
 }
-/* line 584, ../sass/styles.scss */
+/* line 590, ../sass/styles.scss */
 #overlay .details {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -637,18 +643,18 @@ a#contact {
   -ms-flex-pack: center;
   justify-content: center;
 }
-/* line 595, ../sass/styles.scss */
+/* line 601, ../sass/styles.scss */
 #overlay .details img {
   margin-right: 20px;
 }
-/* line 599, ../sass/styles.scss */
+/* line 605, ../sass/styles.scss */
 #overlay .details p {
   font-family: "denseregular", sans-serif;
   font-size: 36px;
   line-height: 54px;
   color: #FFF;
 }
-/* line 607, ../sass/styles.scss */
+/* line 613, ../sass/styles.scss */
 #overlay .profile {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -660,11 +666,11 @@ a#contact {
   -ms-flex-pack: center;
   justify-content: center;
 }
-/* line 618, ../sass/styles.scss */
+/* line 624, ../sass/styles.scss */
 #overlay .profile img {
   margin-right: 20px;
 }
-/* line 622, ../sass/styles.scss */
+/* line 628, ../sass/styles.scss */
 #overlay .profile p {
   font-family: "denseregular", sans-serif;
   font-size: 36px;
@@ -672,20 +678,20 @@ a#contact {
   color: #FFF;
 }
 
-/* line 631, ../sass/styles.scss */
+/* line 637, ../sass/styles.scss */
 #blog {
   height: 100%;
   padding: 120px 0 20px;
   background-color: #7DB6B0;
 }
-/* line 636, ../sass/styles.scss */
+/* line 642, ../sass/styles.scss */
 #blog h4 {
   font-family: "archiveregular", sans-serif;
   font-size: 36px;
   color: #174A59;
   margin: 7px 0px;
 }
-/* line 643, ../sass/styles.scss */
+/* line 649, ../sass/styles.scss */
 #blog .blogArticle {
   font-family: "denseregular", sans-serif;
   font-size: 24px;
@@ -693,13 +699,13 @@ a#contact {
   color: #7DB6B0;
 }
 
-/* line 651, ../sass/styles.scss */
+/* line 657, ../sass/styles.scss */
 #contact {
   width: 100%;
   padding: 120px 0;
   background-color: #FDAD74;
 }
-/* line 656, ../sass/styles.scss */
+/* line 662, ../sass/styles.scss */
 #contact #contact-info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -710,7 +716,7 @@ a#contact {
   margin: auto;
   width: 90%;
 }
-/* line 666, ../sass/styles.scss */
+/* line 672, ../sass/styles.scss */
 #contact #contact-info #map_canvas {
   -webkit-box-flex: 1;
   -ms-flex: 1 0 50%;
@@ -718,7 +724,7 @@ a#contact {
   min-height: 400px;
   margin-top: 25px;
 }
-/* line 674, ../sass/styles.scss */
+/* line 680, ../sass/styles.scss */
 #contact #contact-info form {
   -webkit-box-flex: 1;
   -ms-flex: 1 0 50%;
@@ -730,7 +736,7 @@ a#contact {
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
 }
-/* line 685, ../sass/styles.scss */
+/* line 691, ../sass/styles.scss */
 #contact #contact-info form fieldset input {
   margin-bottom: 10px;
   padding: 5px 10px;
@@ -745,16 +751,16 @@ a#contact {
   border: none;
   background-color: #DDD;
 }
-/* line 699, ../sass/styles.scss */
+/* line 705, ../sass/styles.scss */
 #contact #contact-info form fieldset input:focus {
   background-color: #EEE;
   outline: none;
 }
-/* line 705, ../sass/styles.scss */
+/* line 711, ../sass/styles.scss */
 #contact #contact-info form select {
   color: #174A59;
 }
-/* line 709, ../sass/styles.scss */
+/* line 715, ../sass/styles.scss */
 #contact #contact-info form textarea {
   color: #174A59;
   font-family: "denseregular", sans-serif;
@@ -769,12 +775,12 @@ a#contact {
   -moz-border-radius: 5px;
   resize: none;
 }
-/* line 723, ../sass/styles.scss */
+/* line 729, ../sass/styles.scss */
 #contact #contact-info form textarea:focus {
   background-color: #FFF;
   outline: none;
 }
-/* line 729, ../sass/styles.scss */
+/* line 735, ../sass/styles.scss */
 #contact #contact-info form button {
   float: right;
   margin: 20px 0;
@@ -787,7 +793,7 @@ a#contact {
   border: none;
 }
 
-/* line 744, ../sass/styles.scss */
+/* line 750, ../sass/styles.scss */
 #footer {
   width: 100%;
   height: 100%;
@@ -796,24 +802,24 @@ a#contact {
   color: #FFF;
   font-size: 30px;
 }
-/* line 752, ../sass/styles.scss */
+/* line 758, ../sass/styles.scss */
 #footer p {
   display: inline-block;
   padding: 38px 20px;
 }
-/* line 757, ../sass/styles.scss */
+/* line 763, ../sass/styles.scss */
 #footer img {
   float: right;
   margin: 30px;
 }
-/* line 762, ../sass/styles.scss */
+/* line 768, ../sass/styles.scss */
 #footer a {
   color: #fff;
   text-decoration: none;
 }
 
 /**extra**/
-/* line 769, ../sass/styles.scss */
+/* line 775, ../sass/styles.scss */
 .clearfix::after {
   content: ".";
   display: block;
@@ -823,24 +829,24 @@ a#contact {
   height: 0;
 }
 
-/* line 778, ../sass/styles.scss */
+/* line 784, ../sass/styles.scss */
 .clearfix {
   display: inline-block;
 }
 
-/* line 782, ../sass/styles.scss */
+/* line 788, ../sass/styles.scss */
 html[xmlns] .clearfix {
   display: block;
 }
 
-/* line 786, ../sass/styles.scss */
+/* line 792, ../sass/styles.scss */
 * html .clearfix {
   height: 1%;
 }
 
 /* iPads (landscape) ----------- */
 @media only screen and (max-width: 1024px) {
-  /* line 792, ../sass/styles.scss */
+  /* line 798, ../sass/styles.scss */
   #examplesWrapper .workExamples {
     float: none;
     margin: 20px auto;
@@ -850,11 +856,11 @@ html[xmlns] .clearfix {
 }
 /* iPads (portrait) ----------- */
 @media only screen and (max-width: 768px) {
-  /* line 802, ../sass/styles.scss */
+  /* line 808, ../sass/styles.scss */
   #navigation {
     border-bottom: 0;
   }
-  /* line 805, ../sass/styles.scss */
+  /* line 811, ../sass/styles.scss */
   #navigation ul {
     display: none;
     height: 25px;
@@ -863,34 +869,34 @@ html[xmlns] .clearfix {
     right: 30px;
     text-align: left;
   }
-  /* line 814, ../sass/styles.scss */
+  /* line 820, ../sass/styles.scss */
   #navigation ul li {
     background-color: #174A59;
     padding: 3px 0 3px 10px;
   }
-  /* line 818, ../sass/styles.scss */
+  /* line 824, ../sass/styles.scss */
   #navigation ul li:hover {
     background-color: #7DB6B0;
   }
-  /* line 823, ../sass/styles.scss */
+  /* line 829, ../sass/styles.scss */
   #navigation a {
     color: #FFF;
   }
-  /* line 826, ../sass/styles.scss */
+  /* line 832, ../sass/styles.scss */
   #navigation a:link {
     color: #FFF;
   }
-  /* line 830, ../sass/styles.scss */
+  /* line 836, ../sass/styles.scss */
   #navigation a:visited {
     color: #FFF;
   }
-  /* line 835, ../sass/styles.scss */
+  /* line 841, ../sass/styles.scss */
   #navigation a#pull {
     display: block;
     margin-right: 10px;
     float: right;
   }
-  /* line 841, ../sass/styles.scss */
+  /* line 847, ../sass/styles.scss */
   #navigation a#pull:after {
     content: "";
     background: url("../images/nav-icon.png") no-repeat center;
@@ -902,18 +908,18 @@ html[xmlns] .clearfix {
     right: 30px;
     top: 10px;
   }
-  /* line 853, ../sass/styles.scss */
+  /* line 859, ../sass/styles.scss */
   #navigation li {
     display: block;
     float: none;
     width: 140px;
   }
-  /* line 859, ../sass/styles.scss */
+  /* line 865, ../sass/styles.scss */
   #navigation li a {
     border-bottom: 1px;
   }
 
-  /* line 864, ../sass/styles.scss */
+  /* line 870, ../sass/styles.scss */
   section#hero {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -930,25 +936,25 @@ html[xmlns] .clearfix {
     align-items: center;
   }
 
-  /* line 881, ../sass/styles.scss */
+  /* line 887, ../sass/styles.scss */
   .bubble h3 {
     font-size: 24px;
     width: 80%;
     margin: 0 auto;
   }
-  /* line 887, ../sass/styles.scss */
+  /* line 893, ../sass/styles.scss */
   .bubble .slides h3 {
     width: 86%;
     padding: 15px 0% 15px;
     text-align: left;
   }
-  /* line 893, ../sass/styles.scss */
+  /* line 899, ../sass/styles.scss */
   .bubble .slides li:first-child h3 {
     font-size: 55px;
     text-align: left;
   }
 
-  /* line 899, ../sass/styles.scss */
+  /* line 905, ../sass/styles.scss */
   #aboutBubble,
   #workBubble,
   #teamBubble,
@@ -956,35 +962,35 @@ html[xmlns] .clearfix {
     width: 70%;
   }
 
-  /* line 906, ../sass/styles.scss */
+  /* line 912, ../sass/styles.scss */
   #footer {
     font-size: 22px;
   }
-  /* line 909, ../sass/styles.scss */
+  /* line 915, ../sass/styles.scss */
   #footer p {
     display: inline-block;
     padding: 38px 4px;
   }
 
-  /* line 916, ../sass/styles.scss */
+  /* line 922, ../sass/styles.scss */
   #team #photos {
     width: 80%;
   }
-  /* line 919, ../sass/styles.scss */
+  /* line 925, ../sass/styles.scss */
   #team #photos .teammate {
     width: 50%;
   }
-  /* line 922, ../sass/styles.scss */
+  /* line 928, ../sass/styles.scss */
   #team #photos .teammate span {
     width: 50%;
   }
 
-  /* line 931, ../sass/styles.scss */
+  /* line 937, ../sass/styles.scss */
   #overlay h3 {
     margin-top: 100px;
     text-align: center;
   }
-  /* line 936, ../sass/styles.scss */
+  /* line 942, ../sass/styles.scss */
   #overlay .details {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -992,49 +998,49 @@ html[xmlns] .clearfix {
     flex-direction: column;
   }
 
-  /* line 945, ../sass/styles.scss */
+  /* line 951, ../sass/styles.scss */
   #contact #contact-info {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
   }
-  /* line 952, ../sass/styles.scss */
+  /* line 958, ../sass/styles.scss */
   #contact form {
     width: auto;
   }
 }
 /* Smartphones (landscape) ----------- */
 @media only screen and (max-width: 480px) {
-  /* line 961, ../sass/styles.scss */
+  /* line 967, ../sass/styles.scss */
   #contact #map_canvas {
     display: none;
   }
-  /* line 965, ../sass/styles.scss */
+  /* line 971, ../sass/styles.scss */
   #contact form {
     width: 80%;
     margin: 0 auto;
     float: none;
   }
-  /* line 970, ../sass/styles.scss */
+  /* line 976, ../sass/styles.scss */
   #contact form fieldset input {
     padding: 1px 10px;
     width: 95%;
   }
 
-  /* line 977, ../sass/styles.scss */
+  /* line 983, ../sass/styles.scss */
   #about {
     height: 100%;
     padding: 120px 20px 20px;
     background-color: #E46350;
     margin: 0 auto;
   }
-  /* line 983, ../sass/styles.scss */
+  /* line 989, ../sass/styles.scss */
   #about #workdisplay {
     width: 100%;
     margin: 130px auto;
   }
-  /* line 988, ../sass/styles.scss */
+  /* line 994, ../sass/styles.scss */
   #about #aboutCircle {
     clear: both;
     position: relative;
@@ -1052,7 +1058,7 @@ html[xmlns] .clearfix {
     -webkit-box-shadow: 3px 3px 7px #323232;
     -moz-box-shadow: 3px 3px 7px #323232;
   }
-  /* line 1006, ../sass/styles.scss */
+  /* line 1012, ../sass/styles.scss */
   #about h2 {
     font-family: "denseregular", sans-serif;
     font-weight: bold;
@@ -1060,7 +1066,7 @@ html[xmlns] .clearfix {
     font-size: 72px;
     margin: 15px 0px 20px 20px;
   }
-  /* line 1014, ../sass/styles.scss */
+  /* line 1020, ../sass/styles.scss */
   #about p {
     margin-left: 20px;
     font-family: "denseregular", sans-serif;
@@ -1068,19 +1074,19 @@ html[xmlns] .clearfix {
     font-weight: normal;
     color: #174A59;
   }
-  /* line 1022, ../sass/styles.scss */
+  /* line 1028, ../sass/styles.scss */
   #about #jobs {
     position: relative;
     margin: 0 auto;
     width: 100%;
     margin-top: -110px;
   }
-  /* line 1029, ../sass/styles.scss */
+  /* line 1035, ../sass/styles.scss */
   #about .icons {
     width: 110px;
     height: 110px;
   }
-  /* line 1034, ../sass/styles.scss */
+  /* line 1040, ../sass/styles.scss */
   #about #jobs li {
     margin: 0;
     padding: 0;
@@ -1088,7 +1094,7 @@ html[xmlns] .clearfix {
     display: inline-block;
     width: 31%;
   }
-  /* line 1042, ../sass/styles.scss */
+  /* line 1048, ../sass/styles.scss */
   #about #audio {
     cursor: pointer;
     background-position: -7px -112px;
@@ -1098,7 +1104,7 @@ html[xmlns] .clearfix {
     top: 0px;
     z-index: 999;
   }
-  /* line 1052, ../sass/styles.scss */
+  /* line 1058, ../sass/styles.scss */
   #about #video {
     cursor: pointer;
     background-position: -120px -112px;
@@ -1108,7 +1114,7 @@ html[xmlns] .clearfix {
     left: 0px;
     z-index: 999;
   }
-  /* line 1062, ../sass/styles.scss */
+  /* line 1068, ../sass/styles.scss */
   #about #design {
     cursor: pointer;
     background-position: -233px -112px;
@@ -1118,7 +1124,7 @@ html[xmlns] .clearfix {
     left: 0px;
     z-index: 999;
   }
-  /* line 1072, ../sass/styles.scss */
+  /* line 1078, ../sass/styles.scss */
   #about #development {
     cursor: pointer;
     background-position: -346px -112px;
@@ -1128,7 +1134,7 @@ html[xmlns] .clearfix {
     left: 0px;
     z-index: 999;
   }
-  /* line 1082, ../sass/styles.scss */
+  /* line 1088, ../sass/styles.scss */
   #about #marketing {
     cursor: pointer;
     background-position: -459px -112px;
@@ -1139,7 +1145,7 @@ html[xmlns] .clearfix {
     z-index: 999;
   }
 
-  /* line 1095, ../sass/styles.scss */
+  /* line 1101, ../sass/styles.scss */
   #team .teammate span {
     height: 40px;
     margin-top: 120px;
@@ -1149,33 +1155,33 @@ html[xmlns] .clearfix {
     line-height: 1.2em;
   }
 
-  /* line 1106, ../sass/styles.scss */
+  /* line 1112, ../sass/styles.scss */
   #overlay {
     overflow-y: scroll;
   }
-  /* line 1109, ../sass/styles.scss */
+  /* line 1115, ../sass/styles.scss */
   #overlay h3 {
     margin-top: 350px;
     font-size: 48px;
   }
-  /* line 1115, ../sass/styles.scss */
+  /* line 1121, ../sass/styles.scss */
   #overlay .details img {
     display: none;
   }
 
-  /* line 1121, ../sass/styles.scss */
+  /* line 1127, ../sass/styles.scss */
   #workBubble {
     margin-bottom: 0;
     border-radius: 15px;
   }
-  /* line 1125, ../sass/styles.scss */
+  /* line 1131, ../sass/styles.scss */
   #workBubble #nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
   }
-  /* line 1131, ../sass/styles.scss */
+  /* line 1137, ../sass/styles.scss */
   #workBubble #nav .bubble {
     border: none;
     margin-top: 3px;
@@ -1183,43 +1189,43 @@ html[xmlns] .clearfix {
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
   }
-  /* line 1140, ../sass/styles.scss */
+  /* line 1146, ../sass/styles.scss */
   #workBubble #nav .bubble a:link {
     color: #174A59;
     text-decoration: none;
   }
-  /* line 1145, ../sass/styles.scss */
+  /* line 1151, ../sass/styles.scss */
   #workBubble #nav .bubble a:visited {
     color: #174A59;
   }
-  /* line 1149, ../sass/styles.scss */
+  /* line 1155, ../sass/styles.scss */
   #workBubble #nav .bubble a:hover {
     color: #7DB6B0;
     transition: 0.3s ease-in-out;
     -webkit-transition: 0.3s ease-in-out;
   }
-  /* line 1157, ../sass/styles.scss */
+  /* line 1163, ../sass/styles.scss */
   #workBubble #nav .bubble:hover {
     -webkit-box-shadow: inset 0px 0px 6px #323232;
     box-shadow: inset 0px 0px 6px #323232;
     transition: 0.2s ease-in-out;
     -webkit-transition: 0.2s ease-in-out;
   }
-  /* line 1164, ../sass/styles.scss */
+  /* line 1170, ../sass/styles.scss */
   #workBubble #nav .bubble:hover a:link {
     color: #7DB6B0;
     transition: 0.2s ease-in-out;
     -webkit-transition: 0.2s ease-in-out;
   }
 
-  /* line 1175, ../sass/styles.scss */
+  /* line 1181, ../sass/styles.scss */
   .workExamples {
     float: left;
     width: 80%;
     margin-left: 15px;
   }
 
-  /* line 1181, ../sass/styles.scss */
+  /* line 1187, ../sass/styles.scss */
   .exampleBubble {
     min-height: 200px;
   }
@@ -1227,12 +1233,12 @@ html[xmlns] .clearfix {
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width: 335px) {
   /* Styles */
-  /* line 1190, ../sass/styles.scss */
+  /* line 1196, ../sass/styles.scss */
   #navigation a#pull {
     margin-top: -60px;
   }
 
-  /* line 1195, ../sass/styles.scss */
+  /* line 1201, ../sass/styles.scss */
   .bubble .slides h3 {
     text-align: left;
     font-size: 14px;

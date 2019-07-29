@@ -159,16 +159,16 @@ $(function() {
 
     $('.bubble').on('click', function() {
         switch (this.id) {
-			case 'webBubble':
-				$(this).eq(0).addClass('active').siblings().not($(this).eq(0)).removeClass('active');
+            case 'webBubble':
+                $(this).eq(0).addClass('active').siblings().not($(this).eq(0)).removeClass('active');
                 $('#examplesWrapper .web').show('slow').siblings().not('#examplesWrapper .web').hide('slow');
                 break;
-			case 'audioBubble':
-				$(this).eq(0).addClass('active').siblings().not($(this).eq(0)).removeClass('active');
+            case 'audioBubble':
+                $(this).eq(0).addClass('active').siblings().not($(this).eq(0)).removeClass('active');
                 $('#examplesWrapper .audio').show('slow').siblings().not('#examplesWrapper .audio').hide('slow');
                 break;
-			case 'videoBubble':
-				$(this).eq(0).addClass('active').siblings().not($(this).eq(0)).removeClass('active');
+            case 'videoBubble':
+                $(this).eq(0).addClass('active').siblings().not($(this).eq(0)).removeClass('active');
                 $('#examplesWrapper .video').show('slow').siblings().not('#examplesWrapper .video').hide('slow');
                 break;
             default:

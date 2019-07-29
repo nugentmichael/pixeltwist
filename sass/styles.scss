@@ -521,21 +521,21 @@ a#contact {
             background-color: $purple;
             float: left;
 			overflow: hidden;
-			
-			&:hover span {
-				opacity: 1;
-			}
 
             img {
                 width: 100%;
-                opacity: 1;
+				opacity: 1;
                 transition: 0.3s ease-in-out;
                 -webkit-transition: 0.3s ease-in-out;
 
                 &:hover {
                     opacity: 0.5;
-                    cursor: pointer;
-                }
+					cursor: pointer;
+
+					&+ span {
+						opacity: 1;
+					}
+				}
             }
 
             span {
@@ -550,8 +550,7 @@ a#contact {
                 font-size: 18px;
                 line-height: 1.5em;
                 text-align: center;
-                z-index: 10;
-                opacity: 0;
+				opacity: 0;
                 -webkit-transition: all 0.5s ease;
                 transition: all 0.5s ease;
             }

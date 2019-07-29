@@ -214,8 +214,8 @@ $(function() {
         (function(j) {
             $('#team #photos').append('\
 			<div class="teammate">\
-				<span>' + staff[j].name + '<br>' + staff[j].role + '</span>\
 				<img src="' + staff[j].clear + '" id = "' + staff[j].id + '" alt = "' + staff[j].name + '" data-clear-src="' + staff[j].clear + '" data-pixel-src="' + staff[j].pixelated + '">\
+				<span>' + staff[j].name + '<br>' + staff[j].role + '</span>\
 			</div>');
 
             $('#photos img').on('mouseenter', function() {

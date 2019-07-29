@@ -215,8 +215,16 @@ $(function() {
             $('#team #photos').append('\
 			<div class="teammate">\
 				<span>' + staff[j].name + '<br>' + staff[j].title + '</span>\
-				<img src = "' + staff[j].clear + '" id = "' + staff[j].id + '" alt = "' + staff[j].name + '" data-pixel-src="' + staff[j].pixelated + '">\
+				<img src="' + staff[j].clear + '" id = "' + staff[j].id + '" alt = "' + staff[j].name + '" data-clear-src="' + staff[j].clear + '" data-pixel-src="' + staff[j].pixelated + '">\
 			</div>');
+
+            $('#photos img').on('mouseenter', function() {
+                $(this).attr('src', $(this).data('pixelSrc'));
+            });
+
+            $('#photos img').on('mouseleave', function() {
+                $(this).attr('src', $(this).data('clearSrc'));
+            });
 
             $('#photos img').on('click', function() {
                 if ($(this).attr('id') === staff[j].id) {
